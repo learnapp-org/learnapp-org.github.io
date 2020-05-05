@@ -1,0 +1,49 @@
+@font-face {
+	font-family: AppFont2;
+	src: url(../1/fonts/8477.ttf);
+}
+
+.container-person{
+    position: absolute;
+    right:10%;
+    bottom:5%;
+    z-index: 100;
+}
+
+.person{    
+    width:505px;
+    height:900px;
+    background-size: contain;
+    background-position: center;
+    display: none;
+	transition:background 0.5s;
+}
+
+.person-1{    
+    background: url(../1/images/person/1.png) no-repeat;
+}
+.person-2{    
+    background: url(../1/images/person/2.png) no-repeat;
+}
+.person-3{    
+    background: url(../1/images/person/3.png) no-repeat;
+}
+.person-text{  
+    display: none;
+    font-family: AppFont2;
+    color: #575757;
+    position: absolute;
+    width:450px;
+    height:377px;
+    top:-20px;
+    right:95%;
+    background: url(../1/images/person/cloud.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.person-text h2{   
+    text-align: center;
+    margin: 60px 20px;
+    font-size: 36px;
+    line-height: 1.8em;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+<meta charset='utf-8' />
+<title>Единицы измерения информации</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="1/css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/person.css">
+<script src="js/jQuery-1.12.4.js"></script>
+<script src="js/resize.js"></script>
+<script src="1/js/animate.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>         
+    <div class="fg-resizable" id="app1">   
+    
+	<div id="background"></div>
+    
+    <div  id="makaka" onclick="onClickMakaka(this)"></div>
+	<div id="shape"></div>  
+	<div id="tuman"></div>  	
+       <div id="title"></div>
+	<div id="shrub2" onclick="onClickShrub(this)"></div>
+	<div id="tablet-small" onclick="onClickTablet(this)"></div>
+
+	<div id="shrub1" onclick="onClickShrub(this)"></div>
+	<div id="shrub3" onclick="onClickShrub(this)"></div>
+	<div id="shrub4" onclick="onClickShrub(this)"></div>
+	<div id="shrub6" onclick="onClickShrub(this)"></div>
+	<div id="shrub5" onclick="onClickShrub(this)"></div>
+
+	<div id="mush" onclick="onClickMush(this)"></div>
+	<div id="frog" onclick="onClickFrog(this)"></div>
+	<div class="container-person">
+			<div class="person person-1" onclick="personEscape()"></div>
+			<div class="person-text" onclick="personTextHide()">
+				<h2>На странице есть секрет, Помоги найти ответ.</h2>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/fade.js"></script>
+	<script type="text/javascript" src="js/person.js"></script>
+	<script type="text/javascript" src="js/loader.js"></script>
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			personCome();
+		});
+	</script>
+</body>
+</html>

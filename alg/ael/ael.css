@@ -1,0 +1,788 @@
+.sprite-sprite,
+.eng #logo,
+.rus #logo,
+.kaz #logo,
+.math #discipline,
+.informatics #discipline,
+#toggleApplet,
+#toggleApplet.hover,
+#toggleApplet.press,
+.fullApplet #toggleApplet,
+.fullApplet #toggleApplet.hover,
+.fullApplet #toggleApplet.press,
+.fullApplet #bottomMenu,
+#menuBgLeft,
+#menuExpand,
+#menuExpand.hover,
+#menuExpand.press,
+#menuContract,
+#menuContract.hover,
+#menuContract.press,
+.arts #menuExpand,
+.arts #menuExpand.hover,
+.arts #menuExpand.press,
+.arts #menuContract,
+.arts #menuContract.hover,
+.arts #menuContract.press,
+.scrollTop .scrollTopIcon,
+.scrollBottom .scrollBottomIcon,
+.arts .infoSeparator {
+/*    background-image: url('images/sprite-saf114692cc.png');*/
+    background-repeat: no-repeat
+}
+@font-face {
+    font-family: "arial";
+/*    src: url('fonts/arial.woff?1435148632') format('woff')*/
+}
+@font-face {
+    font-family: "arabic";
+/*    src: url('fonts/arabic.woff?1435148632') format('woff')*/
+}
+@font-face {
+    font-family: "tahoma";
+/*    src: url('fonts/tahoma.woff?1435148632') format('woff')*/
+}
+@font-face {
+    font-family: "andika";
+    /*   src: url('fonts/andika.woff?1435148632') format('woff')*/
+
+}
+*:not(#userNameInput #passInput) {
+    outline: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -ms-content-zooming: none;
+    -ms-touch-action: none
+}
+b {
+    color: #5d3422
+}
+a {
+    color: #0329db
+}
+a.hover {
+    color: red
+}
+a.press {
+    color: #990000
+}
+i {
+    font-family: "Times New Roman", serif
+}
+.eng #logo {
+    background-position: 0 -282px
+}
+.rus #logo {
+    background-position: 0 -680px
+}
+.kaz #logo {
+    background-position: 0 -481px
+}
+.math #discipline {
+    background-position: -110px 0
+}
+.informatics #discipline {
+    background-position: -41px 0
+}
+#ghost {
+    position: absolute;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: transparent
+}
+#ghost.dark {
+    background: rgba(0, 0, 0, 0.65)
+}
+#ghost.darkPortrait {
+    background: rgba(0, 0, 0, 0.65)
+}
+#ghostUser {
+    position: absolute;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: transparent
+}
+#ghostUser.dark {
+    background: rgba(0, 0, 0, 0.65)
+}
+#ghostUser.darkPortrait {
+    background: rgba(0, 0, 0, 0.65)
+}
+#toggleApplet {
+    background-position: -341px 0
+}
+
+#toggleApplet.hover {
+    background-position: -406px -204px
+}
+#toggleApplet.press {
+    background-position: -422px 0
+}
+.fullApplet #toggleApplet {
+    background-position: -325px -204px
+}
+
+
+.fullApplet #toggleApplet.hover {
+    background-position: -179px 0
+}
+.fullApplet #toggleApplet.press {
+    background-position: -260px 0
+}
+#toggleApplet {
+    position: absolute;
+    right: 10px;
+    width: 81px;
+    height: 68px;
+    background-repeat: no-repeat
+}
+
+.arts #toggleApplet {
+    right: 6.3%
+}
+.fullApplet #toggleApplet {
+    background-repeat: no-repeat;
+    z-index: 99999 !important;
+    position: fixed !important
+}
+
+
+.fullApplet #bottomMenui {
+    background-repeat: no-repeat;
+    z-index: 99999 !important;
+    position: fixed !important
+}
+
+#menuExpand {
+    background-position: -165px -168px;
+    content: "text"
+}
+#menuExpand.hover {
+    background-position: -60px -168px
+}
+#menuExpand.press {
+    background-position: -95px -168px
+}
+#menuContract {
+    background-position: -305px -168px
+}
+#menuContract.hover {
+    background-position: -270px -168px
+}
+#menuContract.press {
+    background-position: -235px -168px
+}
+.arts #menuExpand {
+    background-position: -290px -204px
+}
+.arts #menuExpand.hover {
+    background-position: -130px -168px
+}
+.arts #menuExpand.press {
+    background-position: -130px -168px
+}
+.arts #menuContract {
+    background-position: -340px -168px
+}
+.arts #menuContract.hover {
+    background-position: -200px -168px
+}
+.arts #menuContract.press {
+    background-position: -200px -168px
+}
+.scrollTop .scrollTopIcon {
+    background-position: -16px -168px
+}
+.scrollBottom .scrollBottomIcon {
+    background-position: 0 -168px
+}
+html {
+    font-size: 16pt;
+    direction: ltr;
+    text-align: right;
+    cursor: default
+}
+html.ltr {
+    text-align: left
+}
+html {
+    overflow: hidden
+}
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+body.math {
+    /*background: url(images/bgMath.png) repeat*/
+}
+body.informatics {
+    /*background: url(images/bgInformatics.png) repeat*/
+}
+.arts #topContainer {
+    position: absolute;
+    left: 15%;
+    right: 580px;
+    height: 67px;
+    top: 1%
+}
+.screen {
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    direction: rtl
+}
+.ltr .screen {
+    direction: ltr
+}
+#discipline {
+    margin: 0;
+    padding: 0;
+    height: 69px;
+    width: 69px
+}
+.math #discipline,
+.informatics #discipline,
+.arts #discipline {
+    background-repeat: no-repeat
+}
+.arts #discipline {
+    position: relative;
+    width: 175px;
+    top: -10px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: auto auto, auto auto;
+    background-position: center center, -15px 0
+}
+.arts #chapter,
+.arts #lesson {
+    margin-left: 200px
+}
+#menuContainer {
+    z-index: 102;
+   
+}
+.arts #menuContainer {
+    min-height: 20px;
+    width: 25%;
+    background-size: 100% 100%
+}
+.iPad #menuContainer {
+    left: 1%;
+    bottom: 5%;
+    width: 26%
+}
+.arts.iPad #menuContainer {
+    bottom: 15%
+}
+.arts #menuBgLeft {
+    background: none;
+    margin-right: 88.5%
+}
+.iPad.arts #menuBgLeft {
+    background: none;
+    margin-right: 88%
+}
+#menu {
+    min-width: 50px;
+    overflow: hidden;
+    display: block
+}
+#menuExpand,
+#menuContract {
+    width: 35px;
+    height: 36px
+}
+#menuExpand,
+.inside #menuContract {
+    display: none
+}
+.inside #menuExpand {
+    display: block
+}
+#science {
+    height: 350px;
+    z-index: 11
+}
+.arts #science {
+    height: 85%;
+    right: 10%;
+    left: 0%;
+    display: block;
+}
+.arts .s_new_header {
+    background: none;
+    color: #775942
+}
+
+.scroll {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 42px;
+    width: 5px;
+    height: 100px;
+    background: #7f7f7f;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px
+}
+.ltr .scroll {
+    right: 5px
+}
+.rtl .scroll {
+    left: 5px
+}
+.scrollTop {
+    position: absolute;
+    width: 166px;
+    z-index: 1;
+    top: 37px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 43px;
+    text-align: center;
+    /*background: url(images/scrollTop.png) no-repeat*/
+}
+.scrollBottom {
+    position: absolute;
+    width: 166px;
+    z-index: 1;
+    left: 0;
+    bottom: -5px;
+    right: 0;
+    margin: auto;
+    height: 43px;
+    text-align: center;
+    /*background: url(images/scrollBottom.png) no-repeat*/
+}
+.scrollBottom .scrollBottomIcon,
+.scrollTop .scrollTopIcon {
+    width: 16px;
+    height: 10px;
+    margin: 18px auto 0px auto;
+    background-repeat: no-repeat
+}
+.scrollTop .scrollTopIcon {
+    margin-top: 16px
+}
+.sContent {
+    color: white
+}
+.arts .infoSeparator {
+    background-position: 0 -204px
+}
+.arts .infoSeparator {
+    width: 234px;
+    height: 78px;
+    position: absolute;
+    top: 30%
+}
+.infoContent {
+    line-height: 1.2;
+    overflow: hidden;
+    padding: 15px 5px 15px;
+    position: relative;
+    z-index: 1
+}
+.infoText {
+    background-position: 0 -2px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1
+}
+.log {
+    display: none
+}
+.applet {
+    position: absolute;
+    width: 56%;
+    bottom: 5%;
+    margin: auto;
+    direction: ltr !important;
+    /*background: url(images/applet.png) no-repeat;*/
+    background-size: 100% 100%;
+    z-index: 103
+}
+.arts .applet {
+    width: 60%;
+    right: 8%;
+    margin: auto;
+/*    background: url(images/appletArts.png) no-repeat;*/
+    background-size: 100% 100%;
+    bottom: 3%
+}
+.iPad .applet {
+    width: 69%;
+    right: 1%
+}
+.arts.iPad .applet {
+    width: 72%;
+    right: 1%
+}
+.iframe {
+    position: absolute;
+    display: block;
+    border: none;
+    background: none;
+    visibility: hidden;
+    margin-left: 15px
+}
+.arts .iframe {
+    margin-left: 6.3%
+}
+.iframe:first-child {
+    background-image: url(images/loading.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: white;
+    visibility: visible;
+    z-index: 103
+}
+.fullApplet .iframe.loading {
+    background-color: white !important
+}
+.fullApplet #bHolder {
+    display: none
+}
+.topmost {
+    z-index: 99999 !important
+}
+#bHolder {
+    position: absolute;
+    width: 43%;
+    height: 9%;
+    top: 0.5%;
+    left: 1%;
+    background-size: auto 100%
+}
+.arts #bHolder {
+    background: none
+}
+#bHelp {
+    background-image: url("images/bHelp.png");
+    float: left;
+    margin-left: 9%
+}
+#bHelp.hover {
+    background-image: url("images/bHelpHover.png")
+}
+#bHelp.press {
+    background-image: url("images/bHelpPress.png")
+}
+#bRefresh {
+    background-image: url("images/bRefresh.png");
+    float: right;
+    margin-right: 9%
+}
+#bRefresh.hover {
+    background-image: url("images/bRefreshHover.png")
+}
+#bRefresh.press {
+    background-image: url("images/bRefreshPress.png")
+}
+.correctButton {
+    z-index: 102;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    direction: rtl;
+    background-image: url("images/correct.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 16px 16px;
+    display: inline-block
+}
+.menuButton {
+    z-index: 102;
+    position: relative;
+    display: inline-block;
+    top: 15%;
+    width: 40%;
+    height: 76%;
+    text-align: center;
+    line-height: 55%;
+    background-repeat: no-repeat;
+    color: white;
+    direction: rtl;
+    background-size: 100%
+}
+.arts .menuButton {
+    top: 5%
+}
+.menuButton p {
+    font-size: 80%;
+    width: 80%;
+    top: 30%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle
+}
+.bLoginMenu {
+    z-index: 102
+}
+.menuButtonSave {
+    z-index: 102;
+    text-align: center;
+    width: 131px;
+    height: 43px;
+    background-color: Transparent;
+    color: white;
+    background-image: url("images/bSave.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 131px 43px
+}
+.arts .menuButtonSave {
+    top: 5%
+}
+.menuButtonSave p {
+    font-size: 80%;
+    width: 80%;
+    top: 30%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle
+}
+.menuButtonCancel {
+    z-index: 102;
+    text-align: center;
+    width: 131px;
+    height: 43px;
+    background-color: Transparent;
+    color: white;
+    background-image: url("images/bSave.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 131px 43px
+}
+.arts .menuButtonCancel {
+    top: 5%
+}
+.menuButtonCancel p {
+    font-size: 80%;
+    width: 80%;
+    top: 30%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle
+}
+.dot {
+    z-index: 100;
+    width: 100%;
+    cursor: pointer
+}
+.arts .dot {
+    color: #3D3C3C
+}
+.dot.hover {
+    background-color: rgba(119, 119, 119, 0.5)
+}
+.dot.selected {
+    cursor: default;
+    color: #1C4D80;
+    background-color: rgba(255, 255, 0, 0.5)
+}
+.arts .dot.selected {
+    cursor: default;
+    color: #2787AD;
+    background: none
+}
+#window {
+    z-index: 99999;
+    -webkit-box-shadow: inset 0px 0px 4px 1px rgba(77, 77, 77, 0.9);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(77, 77, 77, 0.9);
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(77, 77, 77, 0.9)
+}
+#backgroundElements {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+.math #bgItem1 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    /*background: url(images/mathBgItem1.png) no-repeat -240px -50px;*/
+    background-size: auto 100%
+}
+.math #bgItem2 {
+    position: absolute;
+    left: -5%;
+    bottom: 0;
+    height: 90%;
+    width: 90%;
+    /*background: url(images/mathBgItem2.png) no-repeat 0 0;*/
+    background-size: auto 100%;
+    opacity: 0.5
+}
+.informatics #bgItem1 {
+    position: absolute;
+    direction: rtl;
+    height: 100%;
+    width: 100%;
+    /*background: url(images/infoBgItem1.png) no-repeat right 0;*/
+    background-size: auto 100%
+}
+.informatics #bgItem2 {
+    position: absolute;
+    direction: rtl;
+    height: 100%;
+    width: 100%;
+    /*background: url(images/infoBgItem1.png) no-repeat right 0;*/
+    background-size: auto 100%
+}
+.arts #bgItem1 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(images/bgInformatics.png) repeat 0 0
+}
+.arts #bgItem2 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(images/bg_digits.png) repeat 0 0;
+}
+
+.arts #bgItem4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(images/mathBgItem1.png) repeat-x 0 0;
+    background-size: 91% 100%
+}
+.arts #bgItem5 {
+    position: absolute;
+    left: -5%;
+    top: 13%;
+    height: 80%;
+    width: 110%;
+/*    background: url(images/artsBgItem5.png) no-repeat 0 0;*/
+    background-size: auto 100%
+}
+.iPad.arts #bgItem5 {
+    left: -10%
+}
+.arts #bgItem6 {
+    position: absolute;
+    right: -75%;
+    bottom: 10%;
+    height: 30%;
+    width: 100%;
+/*    background: url(images/artsBgItem6.png) no-repeat 0 0;*/
+    background-size: auto 100%
+}
+#arrowIcon {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+/*    background: url(images/arrow.png) no-repeat center center*/
+}
+#userNameWindow {
+    border-radius: 13px 13px 13px 13px;
+    -webkit-border-radius: 13px 13px 13px 13px;
+    -moz-border-radius: 13px 13px 13px 13px;
+    margin: auto;
+    height: 10%;
+    width: 10%;
+    min-height: 230px;
+    min-width: 450px;
+    overflow: hidden;
+    position: relative;
+    top: 15%;
+    -webkit-box-shadow: inset 0px 0px 4px 1px rgba(77, 77, 77, 0.9);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(77, 77, 77, 0.9);
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(77, 77, 77, 0.9);
+    /*background: url(images/menuPattern.png);*/
+    background-repeat: repeat
+}
+#ipZone {
+    position: absolute;
+    display: block;
+    top: -4%;
+    margin: 3%;
+    color: #ff0000;
+    font-size: 80%
+}
+#copyright {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-weight: inherit;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px
+}
+.overlayText {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-weight: inherit;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-size: 24px
+}
+#topicI {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-weight: inherit;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20px
+}
+#topic {
+    display: none
+}
+#grade {
+    display: none
+}
+#beginOverlay {
+    position: absolute;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    pointer-events: all
+}

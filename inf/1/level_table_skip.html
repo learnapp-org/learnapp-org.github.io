@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<meta charset="UTF-8">
+<title>ERC NIS 2</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/table_skip.css">
+<link rel="stylesheet" href="css/tooltip.css">
+<script src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="js/animate.js"></script>
+<script type="application/javascript"
+	src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<!-- 	<h2 id="times">0:00</h2> -->
+	<div class="container-center">
+		<label id="task-description" class="title1">Выразите объем
+			информации в различных единицах</label>
+	</div>
+	<div id="container-table-skip"></div>
+
+	<a class="button-check" onclick="checkResetButtonPressed(this)"></a>
+	<a href="category.html" class="button-home"></a>
+	<a class="button-check" onclick="check()"></a>
+	<a class="button-reset" style="right:40px; bottom:40px;" onclick="reset()" ></a>
+
+	<div class="modal fade modal-info" >
+		<img src="images/modal/info_bytes.png">
+	<a class="button-cancel right-top" data-dismiss="modal"></a>
+	</div>
+	
+	<a class="button-info right-top" onclick="showInfo()"></a>
+	
+		<div class="modal fade modal-game-over-2" data-backdrop="static"
+		data-keyboard="false" data-uib="twitter%20bootstrap/modal"
+		data-ver="1" data-backdrop="true">
+
+
+		<h3 class="result-title font2">Задание выполнено</h3>
+		<div class="result-bg-2">
+			<label class="beige">Молодец!<br/> так держать</label>
+		</div>
+		<a href="category.html" class="button-home"></a> <a href="level_table_skip.html"
+			class="button-repeat"></a>
+	</div>
+	
+	<script src="js/level_table_skip.js"></script>
+	<script src="js/level_table_skip_config.js"></script>
+	 <script type="text/javascript" src="js/loader.js"></script>
+</body>
+
+</html>

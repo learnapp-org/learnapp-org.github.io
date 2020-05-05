@@ -1,0 +1,334 @@
+.choicesCollection{
+    position: relative;
+    width: 850px;
+    height: 412px;   
+    margin: auto;
+}
+
+.column1{
+    position: relative;
+    width: 264px;
+    height: 400px;
+    float: left;
+    text-align: center;
+    left: 30px;
+}
+
+.column2{
+    width: 264px;
+    height: 300px;
+    position: relative;
+    float: right;   
+
+    text-align: center;
+    bottom:  300px;
+    right: 63px;
+}
+
+.choice, .choiceMatch {
+    position: relative;
+    width: 264px;
+    height: 60px;
+    
+    display: inline-block;
+    /*! padding: 15px 25px; */
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: grey;
+    /*! background-color: black; */
+    border: none;
+    /*! border-radius: 15px; */
+    /*! box-shadow: 0 9px #999; */
+    /*! margin: auto; */
+}
+
+p {
+    position: relative;
+    height: 60px;
+}
+
+#choice1Container{
+    position: relative;
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+#choice2Container{
+    position: relative;
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+#choice3Container{
+    position: relative;
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+
+#match1Container{
+    position: relative;
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+#match2Container{
+    position: relative;
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+#match3Container{
+    position: relative;
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+
+
+
+/*------ animated frame around button ------*/
+
+.svg-wrapper {
+  position: relative;
+  bottom: -200px;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 320px;
+  height: 100px;  
+  background-color: yellow;
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+/*-----------------------------*/
+
+
+
+
+
+/*------ button styling ------*/
+.checkButtonDiv{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    top: 30px;
+    margin: auto;
+}
+
+.checkButton{
+    position: relative;
+    width: 300px;
+    height: 50px;
+
+    display: inline-block;
+    padding: 8px 25px;
+    font-size: 24px;
+    cursor: pointer;
+   
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+   
+
+}
+
+.checkButton:hover {
+    background-color: #3e8e41
+}
+
+.checkButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.disabledDiv {
+    pointer-events: none;
+}
+
+
+.matcheFound {
+    pointer-events: none;
+}
+
+/*-----------------------------*/
+
+
+
+
+/*------- Flip animations -------*/
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+.flip-container:hover .flipper,  
+.flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 308px;
+    height: 77px;
+    /*! margin: 10px; */
+    margin-bottom: 10px;
+}
+
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    background-image: url(../images/bg_orange.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    /*! border-radius: 15px; */
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background: url(../images/bg_brown.png) 0 0 no-repeat;
+}
+
+
+.correct{
+    background: url(../images/bg_green.png) 0 0 no-repeat;
+}
+
+.incorrect{
+    background: url(../images/bg_red.png) 0 0 no-repeat;
+}
+
+
+.front .name {
+    font-size: 2em;
+    display: inline-block;
+    background: rgba(33, 33, 33, 0.9);
+    color: #f8f8f8;
+    font-family: Courier;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 60px;
+    left: 25%;
+    position: absolute;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.back-logo {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    width: 160px;
+    height: 117px;
+    /*background: url(http://davidwalsh.name/demo/logo.png) 0 0 no-repeat;*/
+}
+
+.back-title {
+    font-weight: bold;
+    color: #00304a;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+    font-family: Courier;
+    font-size: 2em;
+}
+
+.back p {
+	color: black;
+    position: absolute;
+    /*! bottom: 40px; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 20px;/* 
+    font-family: arial; */
+    font-size: 20px;
+    color:white;
+    line-height: 1.2em;
+}
+/*-------------------------------*/
+
+
+
+
+
+
+

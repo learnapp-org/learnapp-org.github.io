@@ -1,0 +1,1184 @@
+.sprite-sprite {
+/*    background-image: url('images/sprite-saf114692cc.png');*/
+    background-repeat: no-repeat
+    ba
+}
+.btn-icon,
+.btn.btn-icon {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    text-align: center;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px
+}
+.btn-icon.btn-circle .glyphicon,
+.btn.btn-icon.btn-circle .glyphicon {
+    margin-top: -1px;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px
+}
+.btn-icon.btn-circle .glyphicon:before,
+.btn.btn-icon.btn-circle .glyphicon:before {
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out
+}
+.btn-icon.btn-circle .glyphicon-forward,
+.btn.btn-icon.btn-circle .glyphicon-forward {
+    margin-left: 2px
+}
+.btn-icon.btn-circle .glyphicon-backward,
+.btn.btn-icon.btn-circle .glyphicon-backward {
+    margin-left: -4px
+}
+.btn-icon.btn-lg,
+.btn.btn-icon.btn-lg {
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
+    line-height: 34px
+}
+.btn-icon.btn-lg.btn-circle .glyphicon,
+.btn.btn-icon.btn-lg.btn-circle .glyphicon {
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
+    line-height: 34px
+}
+.btn-icon.btn-lg.btn-circle .glyphicon-forward,
+.btn.btn-icon.btn-lg.btn-circle .glyphicon-forward {
+    margin-left: 3px
+}
+.btn-icon.btn-sm,
+.btn.btn-icon.btn-sm {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+    line-height: 22px
+}
+.btn-icon.btn-sm.btn-circle .glyphicon,
+.btn.btn-icon.btn-sm.btn-circle .glyphicon {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+    line-height: 22px
+}
+.btn-icon.btn-sm.btn-circle .glyphicon-backward,
+.btn.btn-icon.btn-sm.btn-circle .glyphicon-backward {
+    margin-left: -3px
+}
+.btn-icon.btn-xs,
+.btn.btn-icon.btn-xs {
+    width: 16px;
+    height: 16px;
+    font-size: 8px;
+    line-height: 16px
+}
+.btn-icon.btn-xs.btn-circle .glyphicon,
+.btn.btn-icon.btn-xs.btn-circle .glyphicon {
+    width: 16px;
+    height: 16px;
+    font-size: 8px;
+    line-height: 16px
+}
+.btn-icon.btn-xs.btn-circle .glyphicon-forward,
+.btn.btn-icon.btn-xs.btn-circle .glyphicon-forward {
+    margin-left: 1px
+}
+.btn-icon.btn-xs.btn-circle .glyphicon-backward,
+.btn.btn-icon.btn-xs.btn-circle .glyphicon-backward {
+    margin-left: -2px
+}
+.btn-circle,
+.btn.btn-circle {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%
+}
+.prototype-01 {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+}
+.prototype-01 #topContainer {
+    position: absolute;
+    color: #fff
+}
+.prototype-01 #topContainer #chapter {
+    position: relative;
+    margin: 0 0 0 100px;
+    padding: 0;
+    font-size: large;
+    z-index: 102;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5)
+}
+.prototype-01 #topContainer #lesson {
+    position: relative;
+    margin: 10px 0 0 100px;
+    padding: 0;
+    font-size: x-large;
+    z-index: 102;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5)
+}
+.prototype-01 #topContainer #discipline {
+    position: absolute;
+    top: 0,
+}
+.prototype-01 #logo {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    z-index: 102
+}
+.prototype-01 #logo>div {
+    position: absolute;
+    top: 35px;
+    right: 220px;
+    left: -220px;
+    text-align: right
+}
+.prototype-01 #menuContainer {
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    right: -1px;
+    color: #64cce3;
+    line-height: 1.5;
+
+     -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+    visibility: hidden;
+
+}
+
+
+
+li .dot .list-group-item{
+    font-size: 14px;
+}
+
+.prototype-01 #menu {
+    width: 150px;
+    height: 30px;
+    margin: 0;
+
+
+      white-space: nowrap;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+
+
+
+}
+.prototype-01 #menu .panel-heading {
+    border: none
+}
+/*.prototype-01 #menu .panel-heading .infoText .glyphicon {*/
+/*    margin-right: 8px*/
+/*}*/
+.prototype-01 #menu>.panel-body {
+    padding-top: 0
+}
+.prototype-01 #menu>.panel-body .panel {
+    margin: 0;
+    border: none
+}
+.prototype-01 #menu #science {
+    height: 30px;
+    background-color: transparent;
+
+    box-shadow: none;    
+
+
+}
+
+
+.prototype-01 #menu .sContent {
+    
+    height: 30px;
+ 
+   
+}
+.prototype-01 #menu .sContent .list-group-item {
+
+    display:inline;
+    background-color: transparent;
+    
+}
+.prototype-01 #menu .sContent .list-group-item.selected {
+    -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35)
+}
+.prototype-01 #menu .sContent .list-group-item .correctButton {
+    position: absolute;
+   
+}
+.prototype-01 #menu .slimScrollBar {
+    background: #fff !important;
+    z-index: 110 !important
+}
+.prototype-01 .panel-background {
+    margin-bottom: 0;
+    background: transparent none left top repeat;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin: auto;
+}
+.prototype-01 .applet {
+    position: absolute;
+    -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    margin: auto;
+    
+}
+.prototype-01 .applet .iframe,
+.prototype-01 .applet .iframe-shadow {
+    position: absolute;
+    width:  800px;
+    height: 530px;
+    margin: 10px;
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden
+}
+
+.prototype-01 .applet .iframe-shadow {
+/*    pointer-events: none;*/
+/*    visibility: visible;*/
+/*    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(50, 50, 50, 0.75);*/
+/*    -moz-box-shadow: inset 0px 0px 10px 0px rgba(50, 50, 50, 0.75);*/
+/*    box-shadow: inset 0px 0px 10px 0px rgba(50, 50, 50, 0.75);*/
+/*    z-index: 105*/
+}
+
+/**/
+/*.prototype-01 .applet .iframe-shadow #info {*/
+/*    position: absolute;*/
+/*    top: -2px;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    left: -1px;*/
+/*    margin: 0;*/
+/*    cursor: pointer;*/
+/*    pointer-events: all;*/
+/*    background-color: transparent;*/
+/*    border-color: transparent;*/
+/*    color: #fff;*/
+/*    height: 0px;*/
+/*    width: 880px*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow #info>.glyphicon {*/
+/*    margin-left: 15px;*/
+/*    margin-top: 12px*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow #info>.infoText {*/
+/*    position: relative;*/
+/*    top: 60%;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    padding: 10px 40px;*/
+/*    font-size: 18px;*/
+/*    text-align: center;*/
+/*    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);*/
+/*    -webkit-transition: all 0.5s ease-out;*/
+/*    transition: all 0.5s ease-out;*/
+/*    background-color: black;*/
+/*    opacity: 0.8*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow #info:hover .panel-footer {*/
+/*    background: #2a6fab;*/
+/*    border-color: #2a6fab*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow #info .hide-info {*/
+/*    color: #fff;*/
+/*    background: #337ab7;*/
+/*    border-color: #337ab7;*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    width: 40px;*/
+/*    height: 30px;*/
+/*    margin-left: -20px;*/
+/*    padding: 5px;*/
+/*    text-align: center;*/
+/*    -webkit-transition: all 0.5s ease-out;*/
+/*    transition: all 0.5s ease-out*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow #info .hide-info.active,*/
+/*.prototype-01 .applet .iframe-shadow #info .hide-info:active,*/
+/*.prototype-01 .applet .iframe-shadow #info .hide-info:focus,*/
+/*.prototype-01 .applet .iframe-shadow #info .hide-info:hover {*/
+/*    background: #2a6fab;*/
+/*    border-color: #2a6fab*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow #info .hide-info>.glyphicon {*/
+/*    margin-top: -2px;*/
+/*    font-size: 20px;*/
+/*    line-height: 20px*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow #info .hide-info>.glyphicon:before {*/
+/*    display: inline-block;*/
+/*    width: 20px;*/
+/*    height: 20px*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow.info-expanded>.infoText {*/
+/*    opacity: 1*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow.info-expanded .hide-info {*/
+/*    -webkit-border-top-left-radius: 3px;*/
+/*    -webkit-border-top-right-radius: 3px;*/
+/*    -moz-border-radius-topleft: 3px;*/
+/*    -moz-border-radius-topright: 3px;*/
+/*    border-top-left-radius: 3px;*/
+/*    border-top-right-radius: 3px*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow.info-expanded .hide-info>.glyphicon {*/
+/*    margin-left: 3px*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow.info-collapsed {*/
+/*    background: transparent none center 0 no-repeat*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow.info-collapsed #info {*/
+/*    top: -2px;*/
+/*    bottom: auto*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow.info-collapsed #info>.infoText {*/
+/*    margin-top: -1000px;*/
+/*    opacity: 0*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow.info-collapsed #info .hide-info {*/
+/*    bottom: -30px;*/
+/*    opacity: .5;*/
+/*    -webkit-border-bottom-right-radius: 3px;*/
+/*    -webkit-border-bottom-left-radius: 3px;*/
+/*    -moz-border-radius-bottomright: 3px;*/
+/*    -moz-border-radius-bottomleft: 3px;*/
+/*    border-bottom-right-radius: 3px;*/
+/*    border-bottom-left-radius: 3px*/
+/*}*/
+/*.prototype-01 .applet .iframe-shadow.info-collapsed #info .hide-info .glyphicon:before {*/
+/*    content: "\e086"*/
+/*}*/
+/*.prototype-01 #bHolder {*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    top: -26px;*/
+/*    right: -1px;*/
+/*    left: auto;*/
+/*    padding: 4px;*/
+/*    background-size: auto;*/
+/*    border-bottom: none*/
+/*}*/
+.prototype-01 #bHelp,
+.prototype-01 #bRefresh {
+    background-image: none;
+    float: inherit;
+    margin: 0
+}
+.prototype-01 #toggleApplet {
+    top: 4px;
+    right: 10px;
+    z-index: 104;
+}
+
+
+
+#window {
+    display: block;
+    left: 50%;
+    top: 50%;
+    -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out
+}
+#window .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+    
+}
+#window .modal-dialog .modal-content {
+    width: 100%;
+    height: 100%;
+    background: transparent none left top repeat;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px
+}
+#window .modal-dialog .modal-content .modal-header {
+    border-bottom: none;
+    padding: 10px 15px 5px
+}
+#window .modal-dialog .modal-content .modal-header .modal-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px
+}
+#window .modal-dialog .modal-content .modal-header .close {
+    margin-top: 0;
+    line-height: 20px;
+    vertical-align: top
+}
+#window .modal-dialog .modal-content .modal-body {
+    position: absolute;
+    top: 40px;
+    right: 13px;
+    bottom: 13px;
+    left: 15px;
+    margin: 0;
+    padding: 10px;
+    background-color: #ccc;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px
+}
+#window .modal-dialog .modal-content .modal-body img {
+    width: 100%;
+
+    background-color:red;
+}
+#window .modal-dialog .modal-content .modal-body-shadow {
+    pointer-events: none;
+    position: absolute;
+    top: 40px;
+    right: 13px;
+    bottom: 13px;
+    left: 15px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: inset 0px 0px 10px 0px rgba(50, 50, 50, 0.75)
+}
+#userNameWindow #userIp {
+    padding: 10px 0 0
+}
+#userNameWindow label {
+    display: block;
+    margin-bottom: 10px
+}
+/*@media (min-width: 992px) {*/
+/*    .prototype-01  #menuContainer {*/
+/**/
+/**/
+/*        left: 21%;*/
+/*        left: calc(50% - 370px);*/
+/*        width: 250px;*/
+/*        height: 30px;*/
+/*        background: white;*/
+/*        visibility: hidden;*/
+/**/
+/**/
+/*    }*/
+/*    */
+/*    .prototype-01 .applet {*/
+/*        width: 720px;*/
+/*        height: 542px;*/
+/*        top: 22.5%;*/
+/*        top: -webkit-calc(50% - 210px);*/
+/*        top: -moz-calc(50% - 210px);*/
+/*        top: calc(50% - 210px);*/
+/*        */
+/*        /*bottom: auto;*/*/
+/*        -webkit-transform: translateX(150px);*/
+/*        -moz-transform: translateX(150px);*/
+/*        -o-transform: translateX(150px);*/
+/*        -ms-transform: translateX(150px);*/
+/*        transform: translateX(150px)*/
+/*    }*/
+/*    .prototype-01 .applet.inside {*/
+/*        -webkit-transform: translateX(0);*/
+/*        -moz-transform: translateX(0);*/
+/*        -o-transform: translateX(0);*/
+/*        -ms-transform: translateX(0);*/
+/*        transform: translateX(0)*/
+/*    }*/
+/*}*/
+/*@media (max-width: 991px) {*/
+/*    .prototype-01 #menuContainer {*/
+/**/
+/**/
+/*        right: auto;*/
+/*        bottom: 0;*/
+/*        left: 0;*/
+/*        width: 870px;*/
+/*        height: 30px;*/
+/*        visibility: hidden;*/
+/*    }*/
+/*    */
+/*    .prototype-01 #menuContainer #menu {*/
+/*        -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);*/
+/*        -moz-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);*/
+/*        box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35)*/
+/*    }*/
+/*    */
+/*    .prototype-01 .applet {*/
+/*        width: 720px;*/
+/*        height: 542px;*/
+/*       */
+/*        */
+/*        bottom: auto;*/
+/*        margin: auto;*/
+/*    }*/
+/*}*/
+.prototype-01.informatics .panel-background {
+/*    background-image: url(images/Carbon_Background_02.png);*/
+    border-color: #333
+}
+.prototype-01.informatics #topContainer {
+    top: 10px;
+    right: 360px;
+    left: 5%;
+    height: 67px
+}
+.prototype-01.informatics #menuBgLeft .btn,
+.prototype-01.informatics #logo .btn {
+    color: #fff;
+    background: #2d353c;
+    border-color: #2d353c
+}
+
+.prototype-01.informatics #logo .btn.active,
+.prototype-01.informatics #logo .btn:active,
+.prototype-01.informatics #logo .btn:focus,
+.prototype-01.informatics #logo .btn:hover {
+    background: #242a30;
+    border-color: #242a30
+}
+.prototype-01.informatics #menu .slimScrollBtn.btn-icon {
+    color: #fff;
+    background: #2d353c;
+    border-color: #2d353c
+}
+.prototype-01.informatics #menu .slimScrollBtn.btn-icon.active,
+.prototype-01.informatics #menu .slimScrollBtn.btn-icon:active,
+.prototype-01.informatics #menu .slimScrollBtn.btn-icon:focus,
+.prototype-01.informatics #menu .slimScrollBtn.btn-icon:hover {
+    background: #242a30;
+    border-color: #242a30
+}
+.prototype-01.informatics #menu .panel-heading {
+    color: #fff
+}
+.prototype-01.informatics #menu .panel-body {
+    background: transparent url(images/sciencePattern.png) repeat
+}
+.prototype-01.informatics #menu .sContent .list-group-item.selected {
+    background: url(images/bgInformatics.png) repeat;
+    color: #fff
+}
+.prototype-01.informatics .applet .iframe {
+    border-color: #333
+}
+.prototype-01.informatics #window .modal-dialog {
+    background-image: url(images/Carbon_Background_02.png)
+}
+.prototype-01.informatics #window .modal-dialog .modal-content .modal-header .modal-title {
+    color: #fff
+}
+.prototype-01.informatics #window .modal-dialog .modal-content .modal-header .close {
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+.prototype-01.informatics #window .modal-dialog .modal-content .modal-header .close:focus,
+.prototype-01.informatics #window .modal-dialog .modal-content .modal-header .close:hover {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+.prototype-01.informatics #userNameWindow {
+    width: 480px;
+    height: 235px;
+    padding: 15px 25px;
+    background: url(images/Carbon_Background_02.png) repeat;
+    -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35)
+}
+.prototype-01.informatics #userNameWindow label {
+    color: #fff
+}
+.prototype-01.informatics #userNameWindow #userIp {
+    padding: 0
+}
+.prototype-01.arts #topContainer {
+    top: 10px;
+    right: 400px;
+    left: 5%;
+    height: 67px
+}
+.prototype-01.arts #topContainer #chapter,
+.prototype-01.arts #topContainer #lesson {
+    margin-left: 150px
+}
+.prototype-01.arts #topContainer #discipline {
+/*    background-image: url("images/disciplineArts.png"), url("images/artsCloud.png");*/
+    background-position: center center, 28px 8px
+}
+.prototype-01.arts #menuBgLeft .btn-group,
+.prototype-01.arts #topContainer .btn-group {
+    margin-left: 200px
+}
+.prototype-01.arts #menuBgLeft .btn,
+.prototype-01.arts #logo .btn {
+    color: #fff;
+    background: #f0ad4e;
+    border-color: #f0ad4e
+}
+
+.prototype-01.arts #logo .btn.active,
+.prototype-01.arts #logo .btn:active,
+.prototype-01.arts #logo .btn:focus,
+.prototype-01.arts #logo .btn:hover {
+    background: #e7a242;
+    border-color: #e7a242
+}
+.prototype-01.arts #menuContainer {
+
+    bottom: 0px;
+    left: 10px;
+    height: 30px;
+    background-color: #ADD8E6;
+
+}
+
+.prototype-01.arts #menu .slimScrollBtn.btn-icon {
+    color: #fff;
+    background: #f0ad4e;
+    border-color: #f0ad4e
+}
+.prototype-01.arts #menu .slimScrollBtn.btn-icon.active,
+.prototype-01.arts #menu .slimScrollBtn.btn-icon:active,
+.prototype-01.arts #menu .slimScrollBtn.btn-icon:focus,
+.prototype-01.arts #menu .slimScrollBtn.btn-icon:hover {
+    background: #e7a242;
+    border-color: #e7a242
+}
+.prototype-01.arts #menu>.panel-body {
+    padding: 25px
+}
+.prototype-01.arts #menu {
+    height: 30px;
+    margin: auto;
+
+   white-space: nowrap;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+
+}
+
+
+img.leftArrow, .rightArrow {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 10%;
+            vertical-align: middle;
+        }
+
+img.rightArrow{
+    right: 2px;
+}
+      
+
+.prototype-01.arts #menu .sContent .list-group-item {
+    border: none;
+    
+}
+.prototype-01.arts #menu .sContent .list-group-item.selected {
+    color: #775942;
+    font-weight: bold;
+    -weblit-box-shadow: none;
+    box-shadow: none
+}
+.prototype-01.arts #bHolder {
+    top: 13px;
+    right: 50px
+}
+.prototype-01.arts #toggleApplet {
+    top: 52px;
+    right: 60px
+}
+
+.prototype-01.arts .applet {
+    width: 1600px;
+    height: 1220px;
+    top: 200px;
+/*    top: 17%;*/
+/*    top: calc(26% - 270px);*/
+
+    /* right allignment should be changed here. Affects both web and ipad versions */
+    right: 0px;
+    left: -325px;
+    background: url(images/bg_frame.png) no-repeat;
+    -weblit-box-shadow: none;
+    box-shadow: none;
+}
+
+@media (max-width: 2560px) {
+    .prototype-01.arts .applet {
+        width: 1600px;
+        height: 1220px;
+        top: 150px;
+        /*    top: 17%;*/
+        /*    top: calc(26% - 270px);*/
+        
+        /* right allignment should be changed here. Affects both web and ipad versions */
+        right: 0px;
+        left: -25px;
+    }
+}
+@media (max-width: 1930px) {
+    .prototype-01.arts .applet {
+        width: 1600px;
+        height: 1220px;
+        top: 220px;
+        /*    top: 17%;*/
+        /*    top: calc(26% - 270px);*/
+        
+        /* right allignment should be changed here. Affects both web and ipad versions */
+        right: 0px;
+        left: -37px;
+    }
+}
+@media (max-width: 1300px) {
+    .prototype-01.arts .applet {
+        width: 1600px;
+        height: 1220px;
+        top: -160px;
+        /*    top: 17%;*/
+        /*    top: calc(26% - 270px);*/
+        
+        /* right allignment should be changed here. Affects both web and ipad versions */
+        right: 0px;
+        left: -190px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .prototype-01.arts .applet {
+        width: 1600px;
+        height: 1220px;
+        top: 100px;
+        /*    top: 17%;*/
+        /*    top: calc(26% - 270px);*/
+        
+        /* right allignment should be changed here. Affects both web and ipad versions */
+        right: 0px;
+        left: -300px;
+    }
+}
+@media (max-width: 1024px) {
+    .prototype-01 .applet {
+        
+        -webkit-transform: scale(0.7, 0.7);
+        -moz-transform: scale(0.7, 0.7);
+        -o-transform: scale(0.7, 0.7);
+        -ms-transform: scale(0.7, 0.7);
+        transform: scale(0.7, 0.7);
+    }
+}
+@media (max-width: 800px) {
+    .prototype-01 .applet {
+        /*        position: relative;*/
+        margin-top:-265px;
+        /*margin-bottom:0px;*/
+        /*top:100px;*/
+        /*padding-top:2110px;*/
+        margin-left: -172px;
+        /*        left: 300px;*/
+        -webkit-transform: scale(0.45, 0.45);
+        -moz-transform: scale(0.45, 0.45);
+        -o-transform: scale(0.45, 0.45);
+        -ms-transform: scale(0.45, 0.45);
+        transform: scale(0.45, 0.45);
+    }
+}
+/*iphone*/
+
+
+.prototype-01.arts .applet .iframe,
+.prototype-01.arts .applet .iframe-shadow {
+    width: 1280px;
+    height: 800px;
+    top: 125px;
+    left: 160px;
+}
+
+
+.prototype-01.arts .applet .iframe {
+    border-color: #d2a875
+}
+.prototype-01.arts .applet.topmost {
+    background-size: 120% 120%;
+    background-position: 40% 60%
+}
+.prototype-01.arts .applet.topmost #toggleApplet {
+    top: 4px;
+    right: 10px
+}
+
+
+.prototype-01.arts #window .modal-dialog {
+/*    background-image: url(images/appletArts.png);*/
+    background-size: 120% 120%;
+    background-position: 50% 60%
+}
+.prototype-01.arts #window .modal-dialog .modal-content .modal-header .modal-title {
+    color: #775942
+}
+.prototype-01.arts #window .modal-dialog .modal-content .modal-header .close {
+    color: #775942;
+    text-shadow: 0 1px 0 #000;
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+.prototype-01.arts #window .modal-dialog .modal-content .modal-header .close:focus,
+.prototype-01.arts #window .modal-dialog .modal-content .modal-header .close:hover {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+.prototype-01.arts #userNameWindow {
+    width: 480px;
+    height: 250px;
+    padding: 10px 60px 10px 80px;
+    background: url(images/menuArts.png) no-repeat;
+    background-size: 100% 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+.prototype-01.math .panel-background {
+    background-image: url(images/Melamine-wood-004.png);
+    border-color: #5c4316
+}
+.prototype-01.math #topContainer {
+    top: 10px;
+    right: 360px;
+    left: 5%;
+    height: 67px
+}
+.prototype-01.math #menuBgLeft .btn,
+.prototype-01.math #logo .btn {
+    color: #fff;
+    background-image: url(images/Melamine-wood-004.png)
+}
+
+.prototype-01.math #logo .btn.active,
+.prototype-01.math #logo .btn:active,
+.prototype-01.math #logo .btn:focus,
+.prototype-01.math #logo .btn:hover {
+    background-image: url(images/Melamine-wood-004.png)
+}
+.prototype-01.math #menu .slimScrollBtn.btn-icon {
+    color: #fff;
+    background-image: url(images/Melamine-wood-004.png)
+}
+.prototype-01.math #menu .slimScrollBtn.btn-icon.active,
+.prototype-01.math #menu .slimScrollBtn.btn-icon:active,
+.prototype-01.math #menu .slimScrollBtn.btn-icon:focus,
+.prototype-01.math #menu .slimScrollBtn.btn-icon:hover {
+    background-image: url(images/Melamine-wood-004.png)
+}
+.prototype-01.math #menu .panel-heading {
+    color: #fff
+}
+.prototype-01.math #menu .panel-body {
+    background: transparent url(images/sciencePattern_3.png) repeat
+}
+.prototype-01.math #menu .sContent .list-group-item.selected {
+    background: url(images/bgMath.png) repeat;
+    color: #fff
+}
+.prototype-01.math .applet .iframe {
+    border-color: #5c4316
+}
+.prototype-01.math #window .modal-dialog {
+    background-image: url(images/Melamine-wood-004.png)
+}
+.prototype-01.math #window .modal-dialog .modal-content .modal-header .modal-title {
+    color: #fff
+}
+.prototype-01.math #window .modal-dialog .modal-content .modal-header .close {
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+.prototype-01.math #window .modal-dialog .modal-content .modal-header .close:focus,
+.prototype-01.math #window .modal-dialog .modal-content .modal-header .close:hover {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+.prototype-01.math #userNameWindow {
+    width: 480px;
+    height: 235px;
+    padding: 15px 25px;
+    background: url(images/Melamine-wood-004.png) no-repeat;
+    background-size: 100% 100%;
+    -webkit-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35)
+}
+.prototype-01.math #userNameWindow label {
+    color: #fff
+}
+.prototype-01.math #userNameWindow #userIp {
+    padding: 0
+}
+/*@media (max-width: 991px) {*/
+/*    .prototype-01.arts #menuContainer {*/
+/*        top: 25%;*/
+/*        top: calc(50% - 160px);*/
+/*        */
+/*    }*/
+/**/
+/*    */
+/*    .prototype-01.arts .applet {*/
+/*        */
+/*    }*/
+/*}*/
+/*@media (max-width: 767px) {*/
+/*    .prototype-01.informatics #topContainer,*/
+/*    .prototype-01.arts #topContainer,*/
+/*    .prototype-01.math #topContainer {*/
+/*        padding-top: 90px;*/
+/*        right: 220px;*/
+/*        left: 15px*/
+/*    }*/
+/*    .prototype-01.informatics #topContainer #chapter,*/
+/*    .prototype-01.informatics #topContainer #lesson,*/
+/*    .prototype-01.arts #topContainer #chapter,*/
+/*    .prototype-01.arts #topContainer #lesson,*/
+/*    .prototype-01.math #topContainer #chapter,*/
+/*    .prototype-01.math #topContainer #lesson {*/
+/*        margin-left: 0*/
+/*    }*/
+/*    .prototype-01.arts #topContainer #chapter {*/
+/*        margin-top: 20px*/
+/*    }*/
+/*    .prototype-01 #menuContainer {*/
+/*        top: calc(50% - 110px)*/
+/*    }*/
+/*    .prototype-01 .applet {*/
+/*        top: calc(50% - 160px);*/
+/*        -webkit-transform: scale(0.85, 0.85);*/
+/*        -moz-transform: scale(0.85, 0.85);*/
+/*        -o-transform: scale(0.85, 0.85);*/
+/*        -ms-transform: scale(0.85, 0.85);*/
+/*        transform: scale(0.85, 0.85)*/
+/*    }*/
+/*}*/
+/*@media (max-width: 639px) {*/
+/*    .prototype-01.informatics #bgItem2 {*/
+/*        left: 0;*/
+/*        width: 100%*/
+/*    }*/
+/*    .prototype-01 .applet {*/
+/*        -webkit-transform: scale(0.7, 0.7);*/
+/*        -moz-transform: scale(0.7, 0.7);*/
+/*        -o-transform: scale(0.7, 0.7);*/
+/*        -ms-transform: scale(0.7, 0.7);*/
+/*        transform: scale(0.7, 0.7)*/
+/*    }*/
+/*    .prototype-01 #logo>div {*/
+/*        top: 218px;*/
+/*        right: 15px;*/
+/*        left: auto*/
+/*    }*/
+/*}*/
+/*@media (max-width: 519px) {*/
+/*    .prototype-01 .applet {*/
+/*        -webkit-transform: scale(0.55, 0.55);*/
+/*        -moz-transform: scale(0.55, 0.55);*/
+/*        -o-transform: scale(0.55, 0.55);*/
+/*        -ms-transform: scale(0.55, 0.55);*/
+/*        transform: scale(0.55, 0.55)*/
+/*    }*/
+/*}*/
+/*@media (max-width: 419px) {*/
+/*    .prototype-01 .applet {*/
+/*        -webkit-transform: scale(0.45, 0.45);*/
+/*        -moz-transform: scale(0.45, 0.45);*/
+/*        -o-transform: scale(0.45, 0.45);*/
+/*        -ms-transform: scale(0.45, 0.45);*/
+/*        transform: scale(0.45, 0.45)*/
+/*    }*/
+/*}*/
+/*@media (max-width: 319px) {*/
+/*    .prototype-01 .applet {*/
+/*        -webkit-transform: scale(0.4, 0.4);*/
+/*        -moz-transform: scale(0.4, 0.4);*/
+/*        -o-transform: scale(0.4, 0.4);*/
+/*        -ms-transform: scale(0.4, 0.4);*/
+/*        transform: scale(0.4, 0.4)*/
+/*    }*/
+/*}*/
+
+.fullApplet .prototype-01 .applet {
+    width: auto;
+    height: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -65px;
+    margin: 0;
+    border-radius: 0;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+}
+.fullApplet .prototype-01 .applet .iframe {
+    top: 15px;
+    left: 0;
+    margin: auto;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0
+}
+.fullApplet .prototype-01 .applet .iframe-shadow {
+    top: 15px;
+    left: 0;
+    margin: auto;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0
+}
+.fullApplet .prototype-01 #toggleApplet {
+    top: -7px
+}
+
+
+@media (max-height: 609px) {
+    .prototype-01.informatics #topContainer,
+    .prototype-01.arts #topContainer,
+    .prototype-01.math #topContainer {
+        padding-top: 90px;
+        right: 220px;
+        left: 15px
+    }
+    .prototype-01.informatics #topContainer #chapter,
+    .prototype-01.informatics #topContainer #lesson,
+    .prototype-01.arts #topContainer #chapter,
+    .prototype-01.arts #topContainer #lesson,
+    .prototype-01.math #topContainer #chapter,
+    .prototype-01.math #topContainer #lesson {
+        margin-left: 0
+    }
+    .prototype-01.arts #topContainer #chapter {
+        margin-top: 20px
+    }
+    .prototype-01 #menuContainer {
+        top: calc(50% - 220px)
+    }
+    .prototype-01 .applet {
+        top: calc(50% - 250px)
+    }
+    .prototype-01.arts .applet {
+        top: calc(50% - 300px)
+    }
+    .prototype-01.arts #menuContainer {
+        top: calc(50% - 200px)
+    }
+}
+@media (max-height: 399px) {
+    .prototype-01.informatics #topContainer,
+    .prototype-01.arts #topContainer,
+    .prototype-01.math #topContainer {
+        padding-top: 90px;
+        right: 220px;
+        left: 15px
+    }
+    .prototype-01.informatics #topContainer #chapter,
+    .prototype-01.informatics #topContainer #lesson,
+    .prototype-01.arts #topContainer #chapter,
+    .prototype-01.arts #topContainer #lesson,
+    .prototype-01.math #topContainer #chapter,
+    .prototype-01.math #topContainer #lesson {
+        margin-left: 0
+    }
+    .prototype-01.arts #topContainer #chapter {
+        margin-top: 20px
+    }
+    .prototype-01 #menuContainer {
+        top: calc(50% - 160px)
+    }
+    .prototype-01 .applet {
+        top: calc(50% - 250px)
+    }
+    .prototype-01.arts .applet {
+        top: calc(50% - 300px)
+    }
+    .prototype-01.arts #menuContainer {
+        top: calc(50% - 200px)
+    }
+}
+.ie11less.prototype-01 .applet .iframe-shadow.info-expanded {
+    bottom: auto;
+    height: auto;
+    box-shadow: none;
+    overflow: inherit
+}
+.ie11less.prototype-01 .applet .iframe-shadow.info-collapsed {
+    bottom: auto;
+    height: auto;
+    box-shadow: none;
+    overflow: inherit
+}
+.ie11less.prototype-01 .applet .iframe-shadow.info-collapsed #info>.infoText {
+    margin-top: 0;
+    display: none
+}
+.slimScrollBtn.btn-icon {
+    display: none;
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 25px)
+}
+.slimScrollBtn.btn-icon.btn {
+    min-width: 50px
+}
+.slimScrollBtn.btn-icon.btn .glyphicon {
+    top: 4px
+}
+.slimScrollBtn.btn-icon#scrollMenuTop {
+    top: -30px
+}
+.slimScrollBtn.btn-icon#scrollMenuTop.btn .glyphicon {
+    top: 2px
+}

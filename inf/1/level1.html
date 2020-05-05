@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ERC NIS</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" type="text/css" href="css/timer.css">
+<script type="application/javascript" src="lib/jquery.min.js"></script>
+<script type="application/javascript"
+	src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/animate.js"></script>
+<script src="js/timer/snap.svg-min.js"></script>
+<script src="js/timer/jquery.polartimer.js"></script>
+<script src="js/timer/timer.js"></script>
+</head>
+
+<body>
+	<div id="timer">
+		<div id="timerBG"></div>
+		<div id="timerShape"></div>
+		<div id="timerBlick"></div>
+		<h3 id="timerDigits"></h3>
+	</div>
+
+	<label id="counter"></label>
+	<a href="category.html" class="button-home"></a>
+	<h2 class="question container-center" id="task-description"></h2>
+	<div class="container-center" id="container-variants"></div>
+
+	<div class="modal fade uib_w_13" data-backdrop="static"
+		data-keyboard="false">
+		<div class="modal-dialog">
+			<div class="modal-bg">
+				<h3 class="modal-title">
+					Ваш ответ <br />неправильный
+				</h3>
+				<p class="text-helper">...</p>
+				<a class="ok" data-dismiss="modal"></a>
+			</div>
+		</div>
+	</div>
+
+	<!--MODAL TIME OVER-->
+	<div class="modal fade modal-time-over" data-backdrop="static"
+		data-keyboard="false" data-uib="twitter%20bootstrap/modal"
+		data-ver="1" data-backdrop="true">
+
+
+		<h3 class="result-title font2">Время вышло</h3>
+		<div class="result-bg-2">
+			<label class="beige">К сожалению, вы проиграли</label>
+		</div>
+		<a href="category.html" class="button-home"></a> <a href="level1.html"
+			class="button-repeat"></a>
+
+	</div>
+
+	<!--    MODAL RESULT -->
+	<div class="modal fade modal-result" data-backdrop="static"
+		data-keyboard="false">
+
+		<a href="category.html" class="button-home"></a> <a href="level1.html"
+			class="button-repeat"></a>
+		<h3 class="result-title"></h3>
+		<div class="modal-dialog">
+			<div class="result-bg">
+				<div class="stars">
+					<img src="images/modal/star2.png" /> <img class="bigstar"
+						src="images/modal/star1.png" /> <img src="images/modal/star2.png" />
+				</div>
+				<br />
+				<h3 id="result-text"></h3>
+				<h3 id="result-value"></h3>
+			</div>
+
+			<div class="progress" role="progressbar">
+				<div class="progress__bar">
+					<span class="progress__label"></span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-asProgress.js"></script>
+    <script type="text/javascript" src="js/result.js"></script>
+	<script type="text/javascript" src="js/level1_user_scripts.js"></script>
+	<script type="text/javascript" src="js/level1_config.js"></script>
+	 <script type="text/javascript" src="js/loader.js"></script>
+</body>
+</html>

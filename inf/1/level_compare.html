@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<title></title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/progress2/asProgress.css">
+<link rel="stylesheet" href="css/compare.css" />
+<link rel="stylesheet" href="css/animate.css" />
+<!--       FOR CHECKBOX-->
+<script src="lib/jquery.min.js"></script>
+<script type="application/javascript"
+	src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/animate.js"></script>
+</head>
+
+<body>
+
+    <a class="button-info right-top" onclick="showInfo()"></a>
+    <div id="my_overlay"></div>
+	<!-- 	<h2 id="counter" class="counter"></h2> -->
+<!--    <img src="images/bg_orange2.png"/>-->
+	<div class="container-center">
+		<label id="task-description" class="title2">Сравните</label>
+	</div>
+
+	<a href="category.html" class="button-home"></a>
+
+	<!-- MAIN -->
+	<div style="text-align:center; width:660px; position: relative; margin: 0 auto; ">
+		<div id="box" />
+	</div>
+	<!-- <h2>Результат</h2> -->
+	<div class="progress progress2" role="progressbar" data-goal="0"
+		aria-valuemin="0" aria-valuemax="100">
+		<div class="progress__bar">
+			<!-- <span class="progress__label"></span> -->
+		</div>
+	</div>
+    
+	<!--MODAL TIME OVER-->
+	<div class="modal fade modal-game-over-2" data-backdrop="static"
+		data-keyboard="false" data-uib="twitter%20bootstrap/modal"
+		data-ver="1" data-backdrop="true">
+
+
+		<h3 class="result-title font2">Задание выполнено</h3>
+		<div class="result-bg-2">
+			<label class="beige">Молодец!<br/> так держать</label>
+		</div>
+		<a href="category.html" class="button-home"></a> <a href="level_compare.html"
+			class="button-repeat"></a>
+	</div>
+    
+	<div class="modal fade modal-info" >
+		<img src="images/modal/info_bytes.png">
+	<a class="button-cancel right-top" data-dismiss="modal"></a>
+        
+	</div>
+    <script type="text/javascript" src="js/jquery-asProgress.js"></script>
+	<script type="text/javascript" src="js/move.js"></script>
+	<script type="text/javascript" src="js/compare_logic.js"></script>
+	<script type="text/javascript" src="js/compare_config.js"></script>
+	 <script type="text/javascript" src="js/loader.js"></script>
+
+</body>
+
+</html>

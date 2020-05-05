@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/level3.css">
+<link rel="stylesheet" href="css/app.css">
+<script type="application/javascript" src="lib/jquery.min.js"></script>
+<script type="application/javascript"
+	src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+		<!-- 	<h2 id="times">00:00</h2>
+			<h2 id="counter" class="counter"></h2> -->
+			<!-- <h2 id="question-description" class="question container-center">Задание</h2> -->
+			<h2 id="task-description" class="title2" style="font-size:28px;">Установи соответствие</h2>
+			<div style="height: 400px; margin: auto">
+				<div class="choicesCollection">
+					<div class='column1'></div>
+
+					<div class='arrowsContainer'
+						style="position: relative; width: 219px; height: 300px; margin: auto;"></div>
+
+					<!--COLUMN 2 -->
+					<div class='column2'></div>
+				</div>
+			</div>
+
+		<!-- CHECK or RESET button  -->
+		<div class="container-center">
+			<a class="button-check" onclick="checkResetButtonPressed(this)"></a>
+		</div>
+		<a href="category.html" class="button-home"></a>
+
+	
+		<!--MODAL TIME OVER-->
+	<div class="modal fade modal-game-over" data-backdrop="static"
+		data-keyboard="false" data-uib="twitter%20bootstrap/modal"
+		data-ver="1" data-backdrop="true">
+
+
+		<h3 class="result-title font2">Задание выполнено</h3>
+		<div class="result-bg-2">
+			<label class="beige">Молодец!<br/> так держать</label>
+		</div>
+		<a href="category.html" class="button-home"></a> <a href="level3.html"
+			class="button-repeat"></a>
+	</div>
+<script src="js/level3.js"></script>
+ <script type="text/javascript" src="js/loader.js"></script>
+</body>
+</html>

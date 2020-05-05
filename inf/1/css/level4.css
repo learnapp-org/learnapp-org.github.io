@@ -1,0 +1,159 @@
+.imagesCollection{
+    max-width: 700px;   
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageWithDescriptionContainer1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    text-align: center;
+}
+
+
+.imageWithDescriptionContainer2{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.imageWithDescriptionContainer3{
+    width: 200px;
+    height: 200px;
+    float: right; 
+    text-align: center;
+    margin-top: -200px;
+}
+
+.icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.minusPlusButtonsContainer1, .minusPlusButtonsContainer2, .minusPlusButtonsContainer3 {
+    position: relative;
+    width: 200px;
+    margin: auto;
+}
+
+
+
+.incrDecrBtn{
+
+}
+
+.minusButton{
+    position: relative;
+    width: 81px;
+    height: 79px;
+    background-image: url(../images/minus1.png);
+    background-size: 81px 79px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+}
+
+.minusButton:hover {
+    background-image: url(../images/minus2.png);
+}
+
+.plusButton{
+    position: relative;
+    width: 81px;
+    height: 79px;
+    background-image: url(../images/plus1.png);
+    background-size: 81px 79px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+}
+
+.plusButton:hover {
+    background-image: url(../images/plus2.png);
+}
+
+.sizeText{
+    position: relative;
+    width: 50px;
+    margin: auto;
+}
+
+.diskStorage {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.progressIndicator {
+    position: relative;
+    width: 500px;
+    padding-top: 120px;
+    margin: auto;
+}
+
+
+.w3-progress-container{
+    width:100%;
+    height:2.0em;
+    position:absolute;
+    background-color:#f1f1f1;
+    border-radius: 8px;
+}
+
+.w3-progressbar{
+    background-color:#757575;
+    height:100%;
+    position:absolute;
+    line-height:inherit;
+    border-radius: 8px;
+}
+
+.w3-green,.w3-hover-green:hover{
+    color:#fff!important;
+    background-color:#4CAF50!important
+}
+
+.w3-center{
+    text-align:center!important
+}
+
+.w3-text-white,.w3-hover-text-white:hover{
+    color:#fff!important
+}
+
+.disabledDiv {
+    pointer-events: none;
+}
+
+.text-inside-app{
+    font: inherit;
+    color: white;
+}
+
+
+
+.startAgainButton{
+    position:absolute;
+    cursor: pointer;
+    bottom: 0;
+    right:0;
+    width: 127px;
+    height: 131px;
+    margin: 60px;
+    background-image: url(../images/next2.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+
+}
+
+.startAgainButton:hover {
+    background-image: url(../images/next1.png);
+}

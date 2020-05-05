@@ -1,0 +1,48 @@
+#bgCanvas
+{
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+	width: 162px;
+	height: 174px;
+	background: url('../anim/bgCanvas.png') no-repeat;
+}
+#playerplay
+{
+	position: absolute;
+	top: 421px;
+  	left: 43px;
+	width: 100px;
+	height: 100px;
+	background: url('../anim/playerplay.png') no-repeat;
+}
+#bubbleIntro
+{
+	position: absolute;
+	top: 10px;
+  	
+	left: 160px;
+	width: 338px;
+	height: 274px;	
+	display: none
+}
+	
+#fundalBubbleIntro
+{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 530px;
+	height: 459px;
+	background: url('../anim/fundalBubbleIntro.png') no-repeat;
+}
+#textBubbleIntro
+{
+	position: absolute;
+	top: 113px;
+	left: 87px;
+	width: 338px;
+	font-size: 20px;
+	direction: ltr;
+	text-align: center;
+}

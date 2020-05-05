@@ -1,0 +1,53 @@
+.table-skip {
+	position: absolute;
+	top: 150px;
+	 left : 0;
+	right: 0;
+	text-align: center;
+	margin: 20px auto;
+	color: white;
+	font-family: AppFont2;
+	font-size: 32px;
+	left: 0;
+}
+.table-skip label{
+    color:white;
+}
+.table-skip input {
+	border: none;
+	margin: 10px !important;
+	text-align: center;
+	font-size: 32px;
+	background-image: url(../images/card.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: transparent; color : white;
+	width: 221px;
+	height: 59px;
+	color: white;
+}
+
+.table-skip td {
+	padding: 0 10px 0 10px !important;
+}
+
+.input-wrong {
+	border: 3px solid red;
+}
+
+.input-correct {
+	border: 3px solid green;
+}
+
+.label-bottom {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin: 40px auto;
+}
+
+.label-bottom h3 {
+	font-size: 30px;
+}

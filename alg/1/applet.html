@@ -1,0 +1,3105 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        
+       
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>>Разложение многочлена на множители с помощью группировки.</title>
+    </head>
+    
+    <body>
+        
+        </div>
+        <script src='../ael/jquery-1.8.3.min.js'></script>
+ 
+        <script type="text/javascript" src="js/move.js"></script>
+        <script type="application/javascript" src="js/jquery.min.js"></script>
+        <script type="application/javascript" src="js/jquery-ui.min.js"></script>
+
+
+        <!-- main    -->
+        
+        <img id="bg" src="images/bg.png" draggable="false"/>
+        <img id="shadow" src="images/blur.png" draggable="false"/>
+        
+            
+        <div id='task_1'>
+            <img id="header" src="images/header/header1.png" draggable="false"/>
+            
+            <label id="task1">Найди одночлены</label>
+            <label id="description1">Найди одночлены, у которых есть общие буквенные множители.</label>
+            
+            
+            
+            <button id="home" onclick="goHome()"></button>
+            <button id="controller1" onclick="soundControl1()"></button>
+            <img id="timer" src="images/buttons/timer.png" draggable="false"/>
+            <button id="next1" onclick="goNext1()"></button>
+            
+            <label id="timer1">0:00</label>
+            <div id="waiting_time1"></div>
+            
+            <div id="field0">
+                <img id="bg_card1" src="images/bg_card.png" draggable="false"/>
+
+                <button id='card1' class="effect1" onclick="reply_click(this.id)">5x<sup>2</sup>y</button>
+                <button id="card2" class="effect1" onclick="reply_click(this.id)">15abc</button>
+                <button id="card3" class="effect1" onclick="reply_click(this.id)">2x<sup>2</sup>yz</button>
+                <button id="card4" class="effect1" onclick="reply_click(this.id)">2mn(m + n)</button>
+                <button id='card5' class="effect1" onclick="reply_click(this.id)">2(a + b)<sup>2</sup></button>
+                <button id="card6" class="effect1" onclick="reply_click(this.id)">1,4xy<sup>2</sup></button>
+                <button id="card7" class="effect1" onclick="reply_click(this.id)">(a + b)</button>
+                <button id="card8" class="effect1" onclick="reply_click(this.id)">- pqt</button>
+                <button id='card9' class="effect1" onclick="reply_click(this.id)">0,125ac<sup>4</sup></button>
+                <button id="card10" class="effect1" onclick="reply_click(this.id)">(a + b)(b + c)</button>
+                <button id="card11" class="effect1" onclick="reply_click(this.id)">- 8,5a<sup>2</sup>bc<sup>2</sup></button>
+                <button id="card12" class="effect1" onclick="reply_click(this.id)">(m + n)n<sup>2</sup></button>
+                <button id='card13' class="effect1" onclick="reply_click(this.id)">mn</button>
+                <button id="card14" class="effect1" onclick="reply_click(this.id)"> <div id="fraction1"><div class="top">(pq)</div><div class="bottom">2</div></div></button>
+                <button id="card15" class="effect1" onclick="reply_click(this.id)">(m + n)<sup>2</sup></button>
+                <button id="card16" class="effect1" onclick="reply_click(this.id)">- 1,3t<sup>3</sup></button>
+            </div>
+
+
+
+            <label id="label1">Количество попыток:</label>
+            <label id="attempts1">0</label>
+            
+            <label id="label2">Правильных ответов:</label>
+            <label id="attempts2">0</label>
+        </div>
+        
+        
+        <div id='task_2'>
+            <img id="header" src="images/header/header5.png" draggable="false"/>
+            
+            <button id="home" onclick="goHome()"></button>
+            <button id="controller2" onclick="soundControl2()"></button>
+            <img id="timer" src="images/buttons/timer.png" draggable="false"/>
+            <button id="next2" onclick="goNext2()"></button>
+            
+            <label id="timer2">0:00</label>
+            <div id="waiting_time2"></div>
+            
+            
+            <label id="task2">Заполни пропуски</label>
+            
+             <label id="description2">Исключи неверные варианты в отдельный столбец.</label>
+            
+            
+<!--            <img id="progress3" src="images/bar6.png" draggable="false"/>-->
+            <img id="reallystar1" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="reallystar2" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="reallystar3" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="reallystar4" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="reallystar5" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="reallystar6" src="images/buttons/check_green.png" draggable="false"/>
+
+            <!--qwe-->
+            <div id="field1">
+                <img id="star11" src="images/buttons/wrong_red.png" draggable="false"/>
+                <img id="star12" src="images/buttons/wrong_red.png" draggable="false"/>
+                <img id="star13" src="images/buttons/wrong_red.png" draggable="false"/>
+                
+                <img id="pic_cor" src="images/task4/correct.png" draggable="false"/>
+                <img id="pic_incor" src="images/task4/incorrect.png" draggable="false"/>
+                
+                <div id='column1' class = "column"></div>
+                <div id = 'column2' class= 'column'></div>
+             </div>
+
+            <button id="verify" onclick="check2()">Проверить</button>
+            <button id="release" onclick="reset2()" disabled="disabled">Сбросить</button>
+            
+            <label id="label3">Кол. попыток:</label>
+            <label id="attempts3">0</label>
+            
+            <label id="label4">Правильных ответов:</label>
+            <label id="attempts4">0</label>
+            
+            
+            <div id="message1">
+                <div id="text">Установи верный порядок действий и разложи многочлен на множители:
+                    <label id="q1_line42"><b>3a(x + y) + x + y</b></label>
+                </div>
+                <input type="button" value="НАЧАТЬ" id="ok_button" />
+            </div>
+            
+            <img id="q_image1" src="images/blur.png" draggable="false"/>
+        </div>
+        
+        
+        
+        <div id='task_3'>
+            <img id="header" src="images/header/header4.png" draggable="false"/>
+            
+            <button id="home" onclick="goHome()"></button>
+            <button id="controller3" onclick="soundControl3()"></button>
+            <img id="timer" src="images/buttons/timer.png" draggable="false"/>
+            <button id="next3" onclick="goNext3()"></button>
+            
+            <label id="timer3">0:00</label>
+            <div id="waiting_time3"></div>
+            
+            <label id="task3">Заполни пропуски</label>
+            <label id="description3">Заполни пропуски, чтобы выполнялось равенство.</label>
+
+            <img id="progress2" src="images/bar7.png" draggable="false"/>
+            <img id="newstar1" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="newstar2" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="newstar3" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="newstar4" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="newstar5" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="newstar6" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="newstar7" src="images/buttons/check_green.png" draggable="false"/>
+            
+            <!--pop-->
+            
+            <!--#1-->
+            <div id="field_q1">
+                <div id="bg2_value1"></div>
+                <label id="q2_line1">ab + bc - a - c =</label>
+                <input id="q2_input_10" type="text">
+                <label id="q2_line9">(a +</label>
+                <input id="q2_input_11" type="text">
+                <label id="q2_line10">) - (</label>
+                <input id="q2_input_6" type="text">
+                <label id="q2_line11">+ c) = (a +</label>
+                <input id="q2_input_7" type="text">
+                <label id="q2_line12">)(</label>
+                <input id="q2_input_15" type="text">
+                <label id="q2_line20">- 1)</label>
+            </div>
+
+            <!--#2-->
+            <div id="field_q2">
+                <div id="bg2_value2"></div>
+                <label id="q2_line2">7a(2p - q) - 4q + 8p = 7a(</label>
+                <input id="q2_input_17" type="text">
+                <label id="q2_line6">-</label>
+                <input id="q2_input_18" type="text">
+                <label id="q2_line21">) - 4(</label>
+                <input id="q2_input_16" type="text">
+                <label id="q2_line22">-</label>
+                <input id="q2_input_19" type="text">
+                <label id="q2_line23">) = (2p - q)(</label>
+                <input id="q2_input_20" type="text">
+                <label id="q2_line24">-</label>
+                <input id="q2_input_21" type="text">
+                <label id="q2_line25">)</label>
+            </div>
+
+            <!--#3-->
+            <div id="field_q3">
+                <div id="bg2_value3"></div>
+                <label id="q2_line3">xy + xz + 13y + 13z =</label>
+                <input id="q2_input_22" type="text">
+                <label id="q2_line26">(y +</label>
+                <input id="q2_input_23" type="text">
+                <label id="q2_line27">) +</label>
+                <input id="q2_input_24" type="text">
+                <label id="q2_line28">(</label>
+                <input id="q2_input_25" type="text">
+                <label id="q2_line29">+ z) = (</label>
+                <input id="q2_input_26" type="text">
+                <label id="q2_line30">+</label>
+                <input id="q2_input_27" type="text">
+                <label id="q2_line31">)(</label>
+                <input id="q2_input_28" type="text">
+                <label id="q2_line32">+</label>
+                <input id="q2_input_29" type="text">
+                <label id="q2_line33">)</label>
+            </div>
+
+                <!--#4-->
+            <div id="field_q4">
+                <div id="bg2_value4"></div>
+                <label id="q2_line4">x<sup>3</sup> + x<sup>2</sup>y +</label>
+                <input id="q2_input_2" type="text">
+                <label id="q2_line5">+ y = x<sup>2</sup>(x + y) + (</label>
+                <input id="q2_input_30" type="text">
+                <label id="q2_line34">+</label>
+                <input id="q2_input_31" type="text">
+                <label id="q2_line35">) = (x + y)(x<sup>2</sup> +</label>
+                <input id="q2_input_32" type="text">
+                <label id="q2_line36">)</label>
+<!--                <input id="q2_input_33" type="text">-->
+<!--                <label id="q2_line37">)</label>-->
+            </div>
+            
+            <!--#5-->
+            <div id="field_q5">
+                <div id="bg2_value5"></div>
+                <label id="q2_line7">24x<sup>2</sup> - 18xy + 45yz - 60xz = </label>
+                <input id="q2_input_3" type="text">
+                <label id="q2_line8">x (4x - 3y) +</label>
+                <input id="q2_input_4" type="text">
+                <label id="q2_line13">(</label>
+                <input id="q2_input_5" type="text">
+                <label id="q2_line14">-</label>
+                <input id="q2_input_8" type="text">
+                <label id="q2_line15">) = 3(</label>
+                <input id="q2_input_9" type="text">
+                <label id="q2_line16">-</label>
+                <input id="q2_input_12" type="text">
+                <label id="q2_line17">)(</label>
+                <input id="q2_input_13" type="text">
+                <label id="q2_line18">-</label>
+                <input id="q2_input_14" type="text">
+                <label id="q2_line19">)</label>
+            </div>
+            
+            <!--#6-->
+            <div id="field_q6">
+                <div id="bg2_value6"></div>
+                <label id="q2_line38">x<sup>n+1</sup> - 5x<sup>n</sup> + 3x - 15 = x<sup>n</sup>(</label>
+                <input id="q2_input_34" type="text">
+                <label id="q2_line39">- 5) +</label>
+                <input id="q2_input_35" type="text">
+                <label id="q2_line40">(x - 5) = (x<sup>n</sup> +</label>
+                <input id="q2_input_36" type="text">
+                <label id="q2_line41">)(x -</label>
+                <input id="q2_input_37" type="text">
+                <label id="q2_line42">)</label>
+            </div>
+            
+            <!--#7-->
+            <div id="field_q7">
+                <div id="bg2_value7"></div>
+                <label id="q2_line43">x<sup>n+1</sup>y<sup>n</sup> - y<sup>n+3</sup> + 2x<sup>n+1</sup> - 2y<sup>3</sup> = x<sup>n+1</sup>(</label>
+                <input id="q2_input_38" type="text">
+                <input id="q2_input_1" type="text">
+                <label id="q2_line44">+ 2) - y<sup>3</sup>(y<sup>n</sup> +</label>
+                <input id="q2_input_39" type="text">
+                <label id="q2_line46">) = (</label>
+                <input id="q2_input_41" type="text">
+                <input id="q2_input_40" type="text">
+                <label id="q2_line47">+</label>
+                <input id="q2_input_42" type="text">
+                <label id="q2_line48">)(x<sup>n+1</sup> - y<sup>3</sup>)</label>
+            </div>
+            
+            
+            
+            <button id="verify2" class="button1" onclick="check3_1()">Проверить</button>
+            <button id="verify2_1" class="button1" onclick="check3_2()">Проверить</button>
+            <button id="verify2_2" class="button1" onclick="check3_3()">Проверить</button>
+            <button id="verify2_3" class="button1" onclick="check3_4()">Проверить</button>
+            <button id="verify2_4" class="button1" onclick="check3_5()">Проверить</button>
+            <button id="verify2_5" class="button1" onclick="check3_6()">Проверить</button>
+            <button id="verify2_6" class="button1" onclick="check3_7()">Проверить</button>
+            
+             <button id="release2" class="button2" onclick="reset3()" disabled="disabled">Сбросить</button>
+            
+            <label id="label5">Количество попыток:</label>
+            <label id="attempts5">0</label>
+            
+            <label id="label6">Правильных ответов:</label>
+            <label id="attempts6">0</label>
+        </div>
+        
+        
+        
+         <div id='task_4'>
+            <img id="header" src="images/header/header2.png" draggable="false"/>
+            
+            <label id="task4">Заполни пропуски</label>
+            <label id="description4">Подбери многочлены так, чтобы получилось верное равенство.</label>
+            
+            <img id="progress4" src="images/bar2.png" draggable="false"/>
+            <img id="laststar1" src="images/buttons/check_green.png" draggable="false"/>
+            <img id="laststar2" src="images/buttons/check_green.png" draggable="false"/>
+
+
+            <!--#1-->
+            <div id="expression1">
+                <div id="bgg1"></div>
+                <label id="line_1">8a<sup>3</sup> - 12a<sup>2</sup>b - 18ab + X = (2a - 3b)(Y + Z)</label>
+                
+                <label id="line_2">X =</label>
+                <input id="input1" type="text">
+                <input id="input1_deg" type="text">
+                
+                <label id="line_3">Y =</label>
+                <input id="input2" type="text">
+                <input id="input2_deg" type="text">
+                
+                <label id="line_4">Z =</label>
+                <input id="input3" type="text">
+            </div>
+            
+            <!--#2-->
+            <div id="expression2">
+                <div id="bgg2"></div>
+                <label id="line_5">12x<sup>2</sup> + 15x<sup>2</sup>y - X - 40y<sup>3</sup> = (X - Y)(3x<sup>2</sup> - 8y<sup>2</sup>)</label>
+                
+                <label id="line_6">X =</label>
+                <input id="input4" type="text">
+                <input id="input5" type="text">
+                
+                <label id="line_7">Y =</label>
+                <input id="input6" type="text">
+                
+                <label id="line_8">Z =</label>
+                <input id="input7" type="text">
+            </div>
+            
+            
+            <button id="verify4_1" class="button1" onclick="check4_1()">Проверить</button>
+            <button id="verify4_2" class="button1" onclick="check4_2()">Проверить</button>
+            <button id="release4" class="button2" onclick="reset4()" disabled="disabled">Сбросить</button>
+            
+
+            <label id="timer4">0:00</label>
+            <div id="waiting_time4"></div>
+            
+            <button id="home" onclick="goHome()"></button>
+            <button id="controller4" onclick="soundControl4()"></button>
+            <img id="timer" src="images/buttons/timer.png" draggable="false"/>
+<!--            <button id="next4" onclick="goNext4()"></button>-->
+            
+            <label id="label7">Количество попыток:</label>
+            <label id="attempts7">0</label>
+            
+            <label id="label8">Правильных ответов:</label>
+            <label id="attempts8">0</label>
+        </div>
+        
+        
+        
+        
+        
+        <div id='task_0'>
+<!--            <img id="header" src="images/header/header6.png"/>-->
+
+            <img id="bg2" src="images/bg_main.png" draggable="false"/>
+            <img id="speech" src="images/speech.png" draggable="false"/>
+            
+            <!--CLOCK-->
+            <img id="clock2" src="images/clock.png" draggable="false"/>
+            <div id="clock1">
+                <canvas id="canvas"></canvas>
+            </div>
+
+<!--            <label id="task0">Выполни все задания:</label>-->
+            <button id="goTask1" onclick="goNext0()">Задание 1</button>
+            <button id="goTask2" onclick="goNext1()">Задание 2</button>
+            <button id="goTask3" onclick="goNext2()">Задание 3</button>
+            <button id="goTask4" onclick="goNext3()">Задание 4</button>
+<!--            <button id="goTask5" onclick="goNext4()">Задание 5</button>-->
+            <button id="goResults" onclick="goResults()">Результаты</button>
+
+            <img id="mark1" src="images/buttons/check_3.png" draggable="false"/>
+            <img id="mark2" src="images/buttons/check_3.png" draggable="false"/>
+            <img id="mark3" src="images/buttons/check_3.png" draggable="false"/>
+            <img id="mark4" src="images/buttons/check_3.png" draggable="false"/>
+            <img id="mark5" src="images/buttons/check_3.png" draggable="false"/>
+
+        </div>
+        
+        
+       
+        
+        
+        <div id='task_6'>
+            <img id="header" src="images/header/header7.png" draggable="false"/>
+            
+            <button id="home" onclick="goHome()"></button>
+            
+            <label id="results">Результаты</label>
+            
+            <img id="res_bg" src="images/bg_result.png" draggable="false"/>
+            
+            <label id="res_col1">№</label>
+            <label id="res_task_1">Задание 1</label>
+            <label id="res_task_2">Задание 2</label>
+            <label id="res_task_3">Задание 3</label>
+            <label id="res_task_4">Задание 4</label>
+<!--            <label id="res_task_5">Задание 5</label>-->
+
+            <label id="res_col2_a">Правильных</label>
+            <label id="res_col2_b">ответов</label>
+            <label id="res_col3_a">Количество</label>
+            <label id="res_col3_b">попыток</label>
+            <label id="res_col4">Время</label>
+            <label id="res_col5">Выполнено</label>
+            
+            <img id="res_star_1" src="images/buttons/wrong_red.png" draggable="false"/>
+            <img id="res_star_2" src="images/buttons/wrong_red.png" draggable="false"/>
+            <img id="res_star_3" src="images/buttons/wrong_red.png" draggable="false"/>
+            <img id="res_star_4" src="images/buttons/wrong_red.png" draggable="false"/>
+<!--            <img id="res_star_5" src="images/buttons/wrong_red.png"/>-->
+
+            <label id="res_correct_1">0</label>
+            <label id="res_correct_2">0</label>
+            <label id="res_correct_3">0</label>
+            <label id="res_correct_4">0</label>
+<!--            <label id="res_correct_5">0</label>-->
+
+            <label id="res_attempt_1">0</label>
+            <label id="res_attempt_2">0</label>
+            <label id="res_attempt_3">0</label>
+            <label id="res_attempt_4">0</label>
+<!--            <label id="res_attempt_5">0</label>-->
+
+            <label id="res_time_1">0:00</label>
+            <label id="res_time_2">0:00</label>
+            <label id="res_time_3">0:00</label>
+            <label id="res_time_4">0:00</label>
+<!--            <label id="res_time_5">0:00</label>-->
+
+        </div>
+        
+        
+        <div id='information'>
+            
+            <img id="bg_info" src="images/bg_start.png" draggable="false"/>
+            <button id="start" onclick="start_button()"></button>
+            <button id="controller0" onclick="soundControl0()"></button>
+        </div>
+        
+        
+        <img id="firework1" src="images/hero/firework/salut1.png" draggable="false"/>
+        <img id="firework2" src="images/hero/firework/salut2.png" draggable="false"/>
+        <img id="firework3" src="images/hero/firework/salut3.png" draggable="false"/>
+        
+        <img id="hero1" src="images/hero/hero1.png" draggable="false"/>
+        <img id="hero_lose" src="images/hero/hero2.png" draggable="false"/>
+
+
+
+        
+        <script>
+            $("#information").show(); $("#task_0").hide(); $("#task_1").hide(); $("#task_2").hide(); $("#task_3").hide(); $("#task_4").hide(); $("#task_5").hide(); $("#task_6").hide();
+            
+            <!--$("#bg2").hide();-->
+            <!--$("#clock2").hide();-->
+
+            $("#mark1").hide(); $("#mark2").hide(); $("#mark3").hide(); $("#mark4").hide(); $("#mark5").hide();
+
+            $("#firework1").hide(); $("#firework2").hide(); $("#firework3").hide();
+            $("#firework1").css("opacity",0); $("#firework2").css("opacity",0); $("#firework3").css("opacity",0);
+            
+            $("#star1").hide(); $("#star2").hide(); $("#star3").hide(); $("#star4").hide(); $("#star5").hide(); $("#star6").hide(); $("#star11").hide(); $("#star12").hide();
+
+            <!--$("#res_star_1").hide(); $("#res_star_2").hide(); $("#res_star_3").hide(); $("#res_star_4").hide(); $("#res_star_5").hide();-->
+
+            $("#shadow").hide();
+
+
+            var decideToRandomize=0;
+            
+ 
+ 
+            <!--   AUDIO   -->
+            var sound1 = new Audio("sounds/main.mp3");
+            var sound2 = new Audio("sounds/touch2.mp3");
+            var sound3 = new Audio("sounds/corect.mp3");
+            var sound4 = new Audio("sounds/gresit.mp3");
+            var sound5 = new Audio("sounds/time.mp3");
+            var sound6 = new Audio("sounds/win.mp3");
+            var sound7 = new Audio("sounds/lose.mp3");
+            var sound8 = new Audio("sounds/bg1.mp3");
+            var sound9 = new Audio("sounds/bg2.mp3");
+            var sound10 = new Audio("sounds/touch5.mp3");
+            var sound11 = new Audio("sounds/touch3.mp3");
+            var sound12 = new Audio("sounds/dis.mp3");
+            var sound13 = new Audio("sounds/touch8.mp3");
+            var sound15 = new Audio("sounds/bg3.mp3");
+            var sound16 = new Audio("sounds/bg4.mp3");
+            var sound17 = new Audio("sounds/speech.mp3");
+            var sound18 = new Audio("sounds/corect.mp3");
+            var sound19 = new Audio("sounds/touch6.mp3");
+            
+            sound1.loop=true;
+            sound8.loop=true;
+            sound9.loop=true;
+            sound15.loop=true;
+            sound16.loop=true;
+ 
+            var permission=0;
+            var sc=0;
+            var info_sound=0;
+            
+            function stopAll() {
+                sound1.pause(); sound2.pause(); sound3.pause(); sound4.pause(); sound5.pause(); sound6.pause();
+                sound7.pause(); sound8.pause(); sound9.pause(); sound10.pause(); sound11.pause(); sound12.pause();
+                sound13.pause(); sound15.pause(); sound16.pause(); sound17.pause();
+                for(var i1=0; i1<=4; i1++) {
+                    if(info_sound==0) {
+                        document.getElementById("controller"+i1).style.backgroundImage = "url('images/mute1.png')";
+                    } else {
+                        document.getElementById("controller"+i1).style.backgroundImage = "url('images/m-mute1.png')";
+                    }
+                }
+                permission=1;
+                sc=1;
+            }
+            function playAll() {
+                for(var i2=0; i2<=4; i2++) {
+                    if(info_sound==0) {
+                        document.getElementById("controller"+i2).style.backgroundImage = "url('images/unmute1.png')";
+                    } else {
+                        
+                        document.getElementById("controller"+i2).style.backgroundImage = "url('images/m-mute3.png')";
+                    }
+                }
+                permission=0;
+                sc=0;
+            }
+            function soundControl0(){
+                info_sound=1;
+                if(sc==0) { stopAll(); } else { playAll(); }
+            }
+            function soundControl1(){
+                if(sc==0) { stopAll(); } else { playAll();
+                    sound5.play(); sound8.play();
+                }
+            }
+            function soundControl2(){
+                if(sc==0) { stopAll(); } else { playAll();
+                    sound5.play(); sound9.play();
+                }
+            }
+            function soundControl3(){
+                if(sc==0) { stopAll(); } else { playAll();
+                    sound5.play(); sound15.play();
+                }
+            }
+            function soundControl4(){
+                if(sc==0) { stopAll(); } else { playAll();
+                    sound5.play(); sound16.play();
+                }
+            }
+        
+        
+        
+            <!--   MESSAGE   -->
+            $("#speech").css("opacity",0);
+            function show_speech() {
+                $('#speech').delay(0).animate({'opacity':'1'},500,function(){});
+            }
+        
+        
+            <!--   ANIMATION HERO   -->
+            var timer_0;
+
+            function animation_firework()
+            {
+               $('#firework1').delay(0).animate({'opacity':'1'},400,function(){
+                                                $('#firework1').delay(100).animate({'opacity':'0'},200,function(){})
+                                                });
+               $('#firework3').delay(200).animate({'opacity':'1'},400,function(){
+                                                   $('#firework3').delay(200).animate({'opacity':'0'},200,function(){})
+                                                  });
+               $('#firework3').delay(200).animate({'opacity':'1'},400,function(){
+                                                   $('#firework3').delay(100).animate({'opacity':'0'},200,function(){})
+                                                  });
+            }
+            function m2(){
+                var timer_2 = setInterval(move_hero,1);
+            }
+            function move_hero(){
+                var x=document.getElementById('hero1').offsetTop;
+                x = x - 5;
+                if(x == 495){
+                    clearInterval(timer_2);
+                }
+                document.getElementById('hero1').style.top= x + "px";
+            }
+            function m3(){
+                var timer_3 = setInterval(move_hero3,1);
+            }
+            function move_hero3(){
+                var x3=document.getElementById('hero1').offsetTop;
+                x3 = x3 + 5;
+                if(x3 == 850){
+                    clearInterval(timer_3);
+                }
+                document.getElementById('hero1').style.top= x3 + "px";
+            }
+        
+        
+            var v1=0, v2=0, v3=0, v4=0, v5=0, v6=0, v7=0, v8=0, v9=0;
+            
+            function allowDrop(ev){
+                ev.preventDefault();
+            }
+        
+            function drag(ev){
+                ev.dataTransfer.setData("content", ev.target.id);
+            }
+        
+            function drop(ev){
+                ev.preventDefault();
+                var image = ev.dataTransfer.getData("content");
+                ev.target.appendChild(document.getElementById(image));
+            
+                document.getElementById(image).style.backgroundColor = "#efe7d6";
+            
+                document.getElementById("target1").style.textAlign = "center";
+                document.getElementById("target2").style.textAlign = "center";
+                document.getElementById("target4").style.textAlign = "center";
+                document.getElementById("target5").style.textAlign = "center";
+                document.getElementById("target6").style.textAlign = "center";
+                document.getElementById("target7").style.textAlign = "center";
+                document.getElementById("target8").style.textAlign = "center";
+            
+                if($('#target1').find('#answer20').length == 1)
+                {
+                    
+                    v1=1;
+<!--                    document.getElementById("target1").style.border = "2px solid green";-->
+<!--                    document.getElementById("target1").style.textAlign = "center";-->
+                }
+<!--                else-->
+<!--                {-->
+<!--                    document.getElementById("target1").style.border = "2px solid red";-->
+<!--                }-->
+                if($('#target2').find('#answer11').length == 1)
+                {
+                    v2=1;
+<!--                    document.getElementById("target2").style.border = "2px solid green";-->
+<!--                    document.getElementById("target2").style.textAlign = "center";-->
+                }
+                if($('#target4').find('#answer13').length == 1)
+                {
+                    v4=1;
+<!--                    document.getElementById("target4").style.border = "2px solid green";-->
+<!--                    document.getElementById("target4").style.textAlign = "center";-->
+                }
+                if($('#target5').find('#answer16').length == 1)
+                {
+                    v5=1;
+<!--                    document.getElementById("target5").style.border = "2px solid green";-->
+<!--                    document.getElementById("target5").style.textAlign = "center";-->
+                }
+                if($('#target6').find('#answer14').length == 1)
+                {
+                    v6=1;
+<!--                    document.getElementById("target6").style.border = "2px solid green";-->
+<!--                    document.getElementById("target6").style.textAlign = "center";-->
+                }
+                if($('#target7').find('#answer18').length == 1)
+                {
+                    v7=1;
+<!--                    document.getElementById("target7").style.border = "2px solid green";-->
+<!--                    document.getElementById("target7").style.textAlign = "center";-->
+                }
+                if($('#target8').find('#answer19').length == 1)
+                {
+                    v8=1;
+<!--                    document.getElementById("target8").style.border = "2px solid green";-->
+<!--                    document.getElementById("target8").style.textAlign = "center";-->
+                }
+                if($('#target9').find('#answer12').length == 1)
+                {
+                    v9=1;
+<!--                    document.getElementById("target9").style.border = "2px solid green";-->
+<!--                    document.getElementById("target9").style.textAlign = "center";-->
+                }
+            }
+        
+
+
+            <!-- TASK 1 -->
+            var name1;
+            var name2;
+            var name3;
+            var f=0;
+            
+            $("#label_task_1").hide(); $("#label_task_2").hide(); $("#label_task_3").hide(); $("#label_task_4").hide(); $("#label_task_5").hide();
+            $("#label_task_6").hide(); $("#label_task_7").hide(); $("#label_task_8").hide(); $("#label_task_9").hide(); $("#label_task_0").hide();
+            
+            function reply_click(clicked_id) {
+                if(permission==0) { sound2.play(); }
+                if(f==2) {
+                    name3=clicked_id;
+                    check1();
+                    f=3;
+                    
+                    document.getElementById(name3).style.background = "#FF9100";
+                    document.getElementById(name3).style.color = "white";
+                }
+                if(f==1) {
+                    name2=clicked_id;
+                    f=2;
+
+                    document.getElementById(name2).style.background = "#FF9100";
+                    document.getElementById(name2).style.color = "white";
+                }
+                if(f==0) {
+                    name1=clicked_id;
+                    f=1;
+        
+                    document.getElementById(name1).style.background = "#FF9100";
+                    document.getElementById(name1).style.color = "white";
+                }
+            }
+        
+        
+            var counterForEnd = 0;
+            var att1 = 0;
+            
+            function check1() {
+                att1++;
+                document.getElementById("attempts1").innerHTML = att1;
+                document.getElementById("res_attempt_1").innerHTML = att1;
+                
+                if((name1=="card1" && name2=="card3" && name3=="card6") ||
+                   (name1=="card1" && name2=="card6" && name3=="card3") ||
+                   (name1=="card3" && name2=="card1" && name3=="card6") ||
+                   (name1=="card3" && name2=="card6" && name3=="card1") ||
+                   (name1=="card6" && name2=="card1" && name3=="card3") ||
+                   (name1=="card6" && name2=="card3" && name3=="card1")) {
+                    
+                    counterForEnd++;
+                    if(permission==0) { sound3.play(); }
+                    setTimeout(function() {
+                               document.getElementById("card1").style.visibility = "hidden";
+                               document.getElementById("card3").style.visibility = "hidden";
+                               document.getElementById("card6").style.visibility = "hidden";
+                               }, 40);
+                }
+                   if((name1=="card5" && name2=="card7" && name3=="card10") ||
+                      (name1=="card5" && name2=="card10" && name3=="card7") ||
+                      (name1=="card7" && name2=="card5" && name3=="card10") ||
+                      (name1=="card7" && name2=="card10" && name3=="card5") ||
+                      (name1=="card10" && name2=="card5" && name3=="card7") ||
+                      (name1=="card10" && name2=="card7" && name3=="card5")) {
+                       
+                       counterForEnd++;
+                       if(permission==0) { sound3.play(); }
+                       setTimeout(function() {
+                                  document.getElementById("card5").style.visibility = "hidden";
+                                  document.getElementById("card7").style.visibility = "hidden";
+                                  document.getElementById("card10").style.visibility = "hidden";
+                                  }, 40);
+                   }
+                   if((name1=="card2" && name2=="card9" && name3=="card11") ||
+                      (name1=="card2" && name2=="card11" && name3=="card9") ||
+                      (name1=="card9" && name2=="card2" && name3=="card11") ||
+                      (name1=="card9" && name2=="card11" && name3=="card2") ||
+                      (name1=="card11" && name2=="card2" && name3=="card9") ||
+                      (name1=="card11" && name2=="card9" && name3=="card2")) {
+                       
+                       counterForEnd++;
+                       if(permission==0) { sound3.play(); }
+                       setTimeout(function() {
+                                  document.getElementById("card2").style.visibility = "hidden";
+                                  document.getElementById("card9").style.visibility = "hidden";
+                                  document.getElementById("card11").style.visibility = "hidden";
+                                  }, 40);
+                   }
+                      
+                   if((name1=="card4" && name2=="card13" && name3=="card15") ||
+                      (name1=="card4" && name2=="card15" && name3=="card13") ||
+                      (name1=="card13" && name2=="card4" && name3=="card15") ||
+                      (name1=="card13" && name2=="card15" && name3=="card4") ||
+                      (name1=="card15" && name2=="card4" && name3=="card13") ||
+                      (name1=="card15" && name2=="card13" && name3=="card4")) {
+                       
+                       counterForEnd++;
+                       if(permission==0) { sound3.play(); }
+                       setTimeout(function() {
+                                  document.getElementById("card4").style.visibility = "hidden";
+                                  document.getElementById("card13").style.visibility = "hidden";
+                                  document.getElementById("card15").style.visibility = "hidden";
+                                  }, 40);
+                   }
+                      
+                      if((name1=="card8" && name2=="card14" && name3=="card16") ||
+                         (name1=="card8" && name2=="card16" && name3=="card14") ||
+                         (name1=="card14" && name2=="card8" && name3=="card16") ||
+                         (name1=="card14" && name2=="card16" && name3=="card8") ||
+                         (name1=="card16" && name2=="card8" && name3=="card14") ||
+                         (name1=="card16" && name2=="card14" && name3=="card8")) {
+                          
+                          counterForEnd++;
+                          if(permission==0) { sound3.play(); }
+                          setTimeout(function() {
+                                     document.getElementById("card8").style.visibility = "hidden";
+                                     document.getElementById("card14").style.visibility = "hidden";
+                                     document.getElementById("card16").style.visibility = "hidden";
+                                     }, 40);
+                      }
+                else {
+                    if(permission==0) { sound4.play();}
+                    setTimeout(function() {
+                               document.getElementById(name1).style.background = "#f8f4ed";
+                               document.getElementById(name1).style.color = "black";
+                               
+                               document.getElementById(name2).style.background = "#f8f4ed";
+                               document.getElementById(name2).style.color = "black";
+                               
+                               document.getElementById(name3).style.background = "#f8f4ed";
+                               document.getElementById(name3).style.color = "black";
+                               }, 40);
+                }
+                
+                document.getElementById("attempts2").innerHTML = counterForEnd;
+                document.getElementById("res_correct_1").innerHTML = counterForEnd;
+                
+                if(counterForEnd==5){
+                    show_win();
+                    $("#mark1").show();
+                    
+                    document.getElementById('res_star_1').src= "images/buttons/check_green.png";
+                }
+                
+                setTimeout(function() {
+                           f=0;
+                           }, 0.1);
+            }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <!--    TASK 2   -->
+            
+            $('#ok_button').click(function(){
+                                  $('#message1').animate( {
+                                                         width: '0',
+                                                         height: '0',
+                                                         padding: '0',
+                                                         opacity: 0
+                                                         }, 300).hide(300);
+                                  if(permission==0) { sound13.play(); }
+                                  $('#q_image1').hide();
+                                  });
+                                  
+                                  
+                                  
+                                  
+                                  
+            $("#star11").hide(); $("#star12").hide(); $("#star13").hide();
+            
+            $("#reallystar1").hide(); $("#reallystar2").hide(); $("#reallystar3").hide();
+            $("#reallystar4").hide(); $("#reallystar5").hide(); $("#reallystar6").hide();
+
+            var counter = 0;
+            var att2 = 0;
+         
+        
+        
+        
+        
+        var e=0;
+        var r=0;
+        
+        var r_lose=0;
+        var e_lose=0;
+        
+        var att6 = 0;
+        var att7 = 0;
+        function check2() {
+            att2++;
+            document.getElementById("attempts3").innerHTML = att2;
+            document.getElementById("res_attempt_2").innerHTML = att2;
+            
+            
+            
+            checkButtonPressed();
+            
+           
+            
+            document.getElementById("verify").disabled = true;
+            document.getElementById("release").disabled = false;
+            
+            document.getElementById("verify").style.backgroundColor = "#66DE98";
+            document.getElementById("release").style.backgroundColor = "#FF5252";
+            
+            disableInteraction();
+        }
+        
+
+
+        function reset2(){
+<!--            numerator++;-->
+<!--            loadData();-->
+
+            if(r==1){ hide_win();}
+            if(r_lose==1){ hide_lose();}
+    
+            document.getElementById("verify").disabled = false;
+            document.getElementById("release").disabled = true;
+    
+            document.getElementById("verify").style.backgroundColor = "#00C853";
+            document.getElementById("release").style.backgroundColor = "#FF9797";
+    
+            $("#star11").hide(); $("#star12").hide(); $("#star13").hide();
+<!--            $("#star14").hide();-->
+<!--            $("#star15").hide(); $("#star16").hide(); $("#star17").hide(); $("#star18").hide();-->
+
+            document.getElementById('star11').src= "images/buttons/wrong_red.png";
+            document.getElementById('star12').src= "images/buttons/wrong_red.png";
+            document.getElementById('star13').src= "images/buttons/wrong_red.png";
+<!--            document.getElementById('star14').src= "images/buttons/wrong_red.png";-->
+<!--            document.getElementById('star15').src= "images/buttons/wrong_red.png";-->
+<!--            document.getElementById('star16').src= "images/buttons/wrong_red.png";-->
+<!--            document.getElementById('star17').src= "images/buttons/wrong_red.png";-->
+<!--            document.getElementById('star18').src= "images/buttons/wrong_red.png";-->
+
+            order=1;
+    
+            att7=0;
+            <!-- loadData();-->
+        }
+        
+        var numberOfElementsColumn1;
+        var numberOfElementsColumn2;
+        var category1Arr = [];
+        var category2Arr = [];
+        var incorrectFound = false;
+        var allCorrect = false;
+        $(function() {
+          $("#column1, #column2").sortable({
+                                           connectWith: ".column"
+                                           }).disableSelection();
+          });
+          
+          function disableInteraction() {
+              $(".column").addClass("disabledDiv");
+          }
+        
+        function shuffle(array) {
+            var currentIndex = array.length,
+            temporaryValue, randomIndex;
+            
+            while (0 !== currentIndex) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            return array;
+        }
+        
+        var numerator=1;
+         loadData();
+         
+         
+         
+        function loadData() {
+            
+            if(numerator==1){
+                var data = '{"categories":{"category1":[{"value":"01"},{"value":"02"},{"value":"03"}],"category2":[{"value":"11"},{"value":"16"},{"value":"05"}]}}';
+            }
+            if(numerator==2){
+                var data = '{"categories":{"category1":[{"value":"06"},{"value":"07"},{"value":"08"}],"category2":[{"value":"09"},{"value":"10"},{"value":"11"}]}}';
+            }
+            
+            
+            var obj = JSON.parse(data);
+            var categories = obj.categories;
+            var category1 = categories.category1;
+            var category2 = categories.category2;
+            var images = [];
+            
+            numberOfElementsColumn1 = category1.length;
+            numberOfElementsColumn2 = category2.length;
+            
+            var categoriesCombArr = [];
+            var i;
+            for (i = 0; i < numberOfElementsColumn1; i++) {
+                category1Arr[i] = category1[i].value;
+            }
+            
+            for (i = 0; i < numberOfElementsColumn2; i++) {
+                category2Arr[i] = category2[i].value;
+            }
+            
+            categoriesCombArr = $.merge([], category1Arr);
+            categoriesCombArr = $.merge(categoriesCombArr, category2Arr);
+            
+            categoriesCombArr = shuffle(categoriesCombArr);
+            
+            for (i = 0; i < categoriesCombArr.length; i++) {
+                
+                images[i] = categoriesCombArr[i];
+                images[i] = images[i].replace(/\s+/g, '_');
+                if (i < category1Arr.length) {
+                    
+                    <!--$("#column1").append("<div class='choice'>" + categoriesCombArr[i] + "</div>");-->
+                    $("#column1").append("<div class='choice'><div class = 'image' id = 'choice" + i + "'></div></div>");
+                    
+                } else {
+                    <!--$("#column2").append("<div class='choice'>" + categoriesCombArr[i] + "</div>");-->
+                    $("#column2").append("<div class='choice'><div class = 'image' id = 'choice" + i + "'></div></div>");
+                }
+            }
+            for (i=0; i<categoriesCombArr.length; i++){
+                $('#choice' + i).css('background','url(images/task4/' + images[i] + '.png) center center no-repeat');
+            }
+        }
+        
+        function checkButtonPressed() {
+            $("#star11").show(); $("#star12").show(); $("#star13").show();
+<!--            $("#star14").show();-->
+<!--            $("#star15").show(); $("#star16").show(); $("#star17").show(); $("#star18").show();-->
+
+            var i;
+            
+            var elementsInColumn1 = $('#column1').find('.choice');
+            var elementsInColumn2 = $('#column2').find('.choice');
+            var elementsInColumn1Arr = [];
+            var elementsInColumn2Arr = [];
+            incorrectFound = false;
+            
+            
+            for (i = 0; i < elementsInColumn1.length; i++) {
+                elementsInColumn1Arr[i] = $(elementsInColumn1[i]).html();
+            }
+            
+            for (i = 0; i < elementsInColumn2.length; i++) {
+                elementsInColumn2Arr[i] = $(elementsInColumn2[i]).html();
+            }
+            
+            var order=1;
+            
+            for (i = 0; i < category1Arr.length; i++) {
+                //alert(elementsInColumn1Arr[i]);
+                //alert(category1Arr);
+                var str1 =elementsInColumn1Arr[i];
+                var num1 = str1.search(".png");
+                var res1 = str1.slice(num1-2,num1);
+<!--                //alert(res1);-->
+                if (jQuery.inArray(res1, category1Arr) == -1) {
+                    incorrectFound = true;
+                }
+                
+                if(order==1) {
+                    if (res1==01) {
+                        document.getElementById('star11').src= "images/buttons/check_green.png";
+                        att7++;
+                    }
+                }
+                else if(order==2) {
+                    if (res1==02) {
+                        document.getElementById('star12').src= "images/buttons/check_green.png";
+                        att7++;
+                    }
+                }
+                else if(order==3) {
+                    if (res1==03) {
+                        document.getElementById('star13').src= "images/buttons/check_green.png";
+                        att7++;
+                    }
+                }
+<!--                else if(order==4) {-->
+<!--                    if (res1==04) {-->
+<!--                        document.getElementById('star14').src= "images/buttons/check_green.png";-->
+<!--                        att7++;-->
+<!--                    }-->
+<!--                }-->
+<!--                else if(order==5) {-->
+<!--                    if (res1==05) {-->
+<!--                        document.getElementById('star15').src= "images/buttons/check_green.png";-->
+<!--                        att7++;-->
+<!--                    }-->
+<!--                }-->
+<!--                else if(order==6) {-->
+<!--                    if (res1==06) {-->
+<!--                        document.getElementById('star16').src= "images/buttons/check_green.png";-->
+<!--                        att7++;-->
+<!--                    }-->
+<!--                }-->
+<!--                else if(order==7) {-->
+<!--                    if (res1==07) {-->
+<!--                        document.getElementById('star17').src= "images/buttons/check_green.png";-->
+<!--                        att7++;-->
+<!--                    }-->
+<!--                }-->
+<!--                else if(order==8) {-->
+<!--                    if (res1==08) {-->
+<!--                        document.getElementById('star18').src= "images/buttons/check_green.png";-->
+<!--                        att7++;-->
+<!--                    }-->
+<!--                }-->
+                order++;
+                
+                document.getElementById("attempts4").innerHTML = att7;
+                document.getElementById("res_correct_2").innerHTML = att7;
+            }
+            
+            for (i = 0; i < category2Arr.length && !incorrectFound; i++) {
+                var str2 =elementsInColumn2Arr[i];
+                var num2 = str2.search(".png");
+                var res2 = str2.slice(num2-2,num2);
+                if (jQuery.inArray(res2, category2Arr) == -1) {
+                    incorrectFound = true;
+                }
+            }
+            
+            if (incorrectFound) {
+                //        incorrectAnswer();
+                show_lose();
+            } else {
+                //        correctAnswer();
+                show_win();
+                
+                $("#mark2").show();
+                document.getElementById('res_star_2').src= "images/buttons/check_green.png";
+                allCorrect = true;
+            }
+        }
+        
+        
+        
+            
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <!--    TASK 3   -->
+            var att3 = 0;
+            var att4 = 0;
+            
+            for (var i3 = 2; i3 <= 7; i3++) {
+                $("#field_q"+i3).hide();
+            }
+        
+<!--            $("#field_q1").hide();-->
+<!--            $("#field_q2").hide();-->
+<!--            $("#field_q3").hide();-->
+<!--            $("#field_q4").hide();-->
+<!--            $("#field_q5").hide();-->
+<!--            $("#field_q6").hide();-->
+<!--            $("#field_q7").hide();-->
+
+
+<!--            $("#verify2").hide();-->
+            $("#verify2_1").hide();
+            $("#verify2_2").hide();
+            $("#verify2_3").hide();
+            $("#verify2_4").hide();
+            $("#verify2_5").hide();
+            $("#verify2_6").hide();
+
+            for (var i4 = 1; i4 <= 7; i4++) {
+                $("#newstar"+i4).hide();
+            }
+
+            function check3() {
+                att3++;
+                document.getElementById("attempts5").innerHTML = att3;
+                document.getElementById("res_attempt_3").innerHTML = att3;
+                
+                document.getElementById("release2").disabled = false;
+                document.getElementById("release2").style.backgroundColor = "#FF5252";
+            }
+        
+        
+        
+            var percentage = 0;
+            var percentage1 = 0;
+            var percentage2 = 0;
+            var percentage3 = 0;
+            var percentage4 = 0;
+            var percentage5 = 0;
+            var percentage6 = 0;
+            
+            
+            
+            <!--#1-->
+            function check3_1() {
+                check3();
+
+                if (document.getElementById("q2_input_10").value === "b") {
+                    document.getElementById("q2_input_10").style.color = "green";
+                    document.getElementById("q2_input_10").style.borderColor = "green";
+                    percentage++;
+                } else {
+                    document.getElementById("q2_input_10").style.color = "red";
+                    document.getElementById("q2_input_10").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_11").value === "c") {
+                    document.getElementById("q2_input_11").style.color = "green";
+                    document.getElementById("q2_input_11").style.borderColor = "green";
+                    percentage++;
+                } else {
+                    document.getElementById("q2_input_11").style.color = "red";
+                    document.getElementById("q2_input_11").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_6").value === "a") {
+                    document.getElementById("q2_input_6").style.color = "green";
+                    document.getElementById("q2_input_6").style.borderColor = "green";
+                    percentage++;
+                } else {
+                    document.getElementById("q2_input_6").style.color = "red";
+                    document.getElementById("q2_input_6").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_7").value === "c") {
+                    document.getElementById("q2_input_7").style.color = "green";
+                    document.getElementById("q2_input_7").style.borderColor = "green";
+                    percentage++;
+                } else {
+                    document.getElementById("q2_input_7").style.color = "red";
+                    document.getElementById("q2_input_7").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_15").value === "b") {
+                    document.getElementById("q2_input_15").style.color = "green";
+                    document.getElementById("q2_input_15").style.borderColor = "green";
+                    percentage++;
+                } else {
+                    document.getElementById("q2_input_15").style.color = "red";
+                    document.getElementById("q2_input_15").style.borderColor = "red";
+                }
+                if(document.getElementById("q2_input_10").value === "b" &&
+                   document.getElementById("q2_input_11").value === "c" &&
+                   document.getElementById("q2_input_6").value === "a" &&
+                   document.getElementById("q2_input_7").value === "c" &&
+                   document.getElementById("q2_input_15").value === "b") {
+                    if(permission==0) { sound3.play(); }
+                    $("#newstar1").show();
+                    document.getElementById('newstar1').src= "images/buttons/check_green.png";
+                    
+                    document.getElementById("release2").disabled = true;
+                    document.getElementById("release2").style.backgroundColor = "#FF9797";
+                    
+                    setTimeout(function() {
+                               $("#field_q1").hide();
+                               $("#field_q2").show();
+                               $("#verify2").hide();
+                               $("#verify2_1").show();
+                               }, 1000);
+                } else {
+                    if(permission==0) { sound4.play(); }
+                    $("#newstar1").show();
+                    document.getElementById('newstar1').src= "images/buttons/wrong_red.png";
+                }
+                
+                document.getElementById("q2_input_10").disabled = true;
+                document.getElementById("q2_input_11").disabled = true;
+                document.getElementById("q2_input_6").disabled = true;
+                document.getElementById("q2_input_7").disabled = true;
+                document.getElementById("q2_input_15").disabled = true;
+                
+                document.getElementById("verify2").disabled = true;
+                document.getElementById("verify2").style.backgroundColor = "#66DE98";
+                
+                document.getElementById("attempts6").innerHTML = percentage;
+                document.getElementById("res_correct_3").innerHTML = percentage;
+                
+                percentage1=percentage;
+                percentage=0;
+            }
+        
+            <!--#2-->
+            function check3_2() {
+                check3();
+                
+                if (document.getElementById("q2_input_17").value === "2p") {
+                    document.getElementById("q2_input_17").style.color = "green";
+                    document.getElementById("q2_input_17").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_17").style.color = "red";
+                    document.getElementById("q2_input_17").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_18").value === "q") {
+                    document.getElementById("q2_input_18").style.color = "green";
+                    document.getElementById("q2_input_18").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_18").style.color = "red";
+                    document.getElementById("q2_input_18").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_16").value === "2p") {
+                    document.getElementById("q2_input_16").style.color = "green";
+                    document.getElementById("q2_input_16").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_16").style.color = "red";
+                    document.getElementById("q2_input_16").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_19").value === "q") {
+                    document.getElementById("q2_input_19").style.color = "green";
+                    document.getElementById("q2_input_19").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_19").style.color = "red";
+                    document.getElementById("q2_input_19").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_20").value === "7a") {
+                    document.getElementById("q2_input_20").style.color = "green";
+                    document.getElementById("q2_input_20").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_20").style.color = "red";
+                    document.getElementById("q2_input_20").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_21").value === "4") {
+                    document.getElementById("q2_input_21").style.color = "green";
+                    document.getElementById("q2_input_21").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_21").style.color = "red";
+                    document.getElementById("q2_input_21").style.borderColor = "red";
+                }
+                if(document.getElementById("q2_input_17").value === "2p" &&
+                   document.getElementById("q2_input_18").value === "q" &&
+                   document.getElementById("q2_input_16").value === "2p" &&
+                   document.getElementById("q2_input_19").value === "q" &&
+                   document.getElementById("q2_input_20").value === "7a" &&
+                   document.getElementById("q2_input_21").value === "4") {
+                    if(permission==0) { sound3.play(); }
+                    
+                    $("#newstar2").show();
+                    document.getElementById('newstar2').src= "images/buttons/check_green.png";
+                    
+                    document.getElementById("release2").disabled = true;
+                    document.getElementById("release2").style.backgroundColor = "#FF9797";
+                    
+                    setTimeout(function() {
+                               $("#field_q2").hide();
+                               $("#field_q3").show();
+                               $("#verify2_1").hide();
+                               $("#verify2_2").show();
+                               }, 1000);
+                } else {
+                    if(permission==0) { sound4.play(); }
+                    $("#newstar2").show();
+                    document.getElementById('newstar2').src= "images/buttons/wrong_red.png";
+                }
+                
+                document.getElementById("q2_input_17").disabled = true;
+                document.getElementById("q2_input_18").disabled = true;
+                document.getElementById("q2_input_16").disabled = true;
+                document.getElementById("q2_input_19").disabled = true;
+                document.getElementById("q2_input_20").disabled = true;
+                document.getElementById("q2_input_21").disabled = true;
+                
+                document.getElementById("verify2_1").disabled = true;
+                document.getElementById("verify2_1").style.backgroundColor = "#66DE98";
+                
+                document.getElementById("attempts6").innerHTML = percentage1 + percentage;
+                document.getElementById("res_correct_3").innerHTML = percentage1 + percentage;
+                
+                percentage2=percentage1+percentage;
+                percentage=0;
+            }
+        
+            <!--#3-->
+            function check3_3() {
+                check3();
+                
+                if (document.getElementById("q2_input_22").value === "x") {
+                    document.getElementById("q2_input_22").style.color = "green";
+                    document.getElementById("q2_input_22").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_22").style.color = "red";
+                    document.getElementById("q2_input_22").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_23").value === "z") {
+                    document.getElementById("q2_input_23").style.color = "green";
+                    document.getElementById("q2_input_23").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_23").style.color = "red";
+                    document.getElementById("q2_input_23").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_24").value === "13") {
+                    document.getElementById("q2_input_24").style.color = "green";
+                    document.getElementById("q2_input_24").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_24").style.color = "red";
+                    document.getElementById("q2_input_24").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_25").value === "y") {
+                    document.getElementById("q2_input_25").style.color = "green";
+                    document.getElementById("q2_input_25").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_25").style.color = "red";
+                    document.getElementById("q2_input_25").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_26").value === "y") {
+                    document.getElementById("q2_input_26").style.color = "green";
+                    document.getElementById("q2_input_26").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_26").style.color = "red";
+                    document.getElementById("q2_input_26").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_27").value === "z") {
+                    document.getElementById("q2_input_27").style.color = "green";
+                    document.getElementById("q2_input_27").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_27").style.color = "red";
+                    document.getElementById("q2_input_27").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_28").value === "x") {
+                    document.getElementById("q2_input_28").style.color = "green";
+                    document.getElementById("q2_input_28").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_28").style.color = "red";
+                    document.getElementById("q2_input_28").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_29").value === "13") {
+                    document.getElementById("q2_input_29").style.color = "green";
+                    document.getElementById("q2_input_29").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_29").style.color = "red";
+                    document.getElementById("q2_input_29").style.borderColor = "red";
+                }
+                if(document.getElementById("q2_input_22").value === "x" &&
+                   document.getElementById("q2_input_23").value === "z" &&
+                   document.getElementById("q2_input_24").value === "13" &&
+                   document.getElementById("q2_input_25").value === "y" &&
+                   document.getElementById("q2_input_26").value === "y" &&
+                   document.getElementById("q2_input_27").value === "z" &&
+                   document.getElementById("q2_input_28").value === "x" &&
+                   document.getElementById("q2_input_29").value === "13") {
+                    if(permission==0) { sound3.play(); }
+                    
+                    $("#newstar3").show();
+                    document.getElementById('newstar3').src= "images/buttons/check_green.png";
+                    
+                    document.getElementById("release2").disabled = true;
+                    document.getElementById("release2").style.backgroundColor = "#FF9797";
+                    
+                    setTimeout(function() {
+                               $("#field_q3").hide();
+                               $("#field_q4").show();
+                               $("#verify2_2").hide();
+                               $("#verify2_3").show();
+                               }, 1000);
+                } else {
+                    if(permission==0) { sound4.play(); }
+                    $("#newstar3").show();
+                    document.getElementById('newstar3').src= "images/buttons/wrong_red.png";
+                }
+                
+                document.getElementById("q2_input_22").disabled = true;
+                document.getElementById("q2_input_23").disabled = true;
+                document.getElementById("q2_input_24").disabled = true;
+                document.getElementById("q2_input_25").disabled = true;
+                document.getElementById("q2_input_26").disabled = true;
+                document.getElementById("q2_input_27").disabled = true;
+                document.getElementById("q2_input_28").disabled = true;
+                document.getElementById("q2_input_29").disabled = true;
+                
+                document.getElementById("verify2_2").disabled = true;
+                document.getElementById("verify2_2").style.backgroundColor = "#66DE98";
+                
+                document.getElementById("attempts6").innerHTML = percentage2 + percentage;
+                document.getElementById("res_correct_3").innerHTML = percentage2 + percentage;
+                
+                percentage3=percentage2 + percentage;
+                percentage=0;
+            }
+        
+            <!--#4-->
+            function check3_4() {
+                check3();
+                
+                if (document.getElementById("q2_input_2").value === "x") {
+                    document.getElementById("q2_input_2").style.color = "green";
+                    document.getElementById("q2_input_2").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_2").style.color = "red";
+                    document.getElementById("q2_input_2").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_30").value === "x") {
+                    document.getElementById("q2_input_30").style.color = "green";
+                    document.getElementById("q2_input_30").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_30").style.color = "red";
+                    document.getElementById("q2_input_30").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_31").value === "y") {
+                    document.getElementById("q2_input_31").style.color = "green";
+                    document.getElementById("q2_input_31").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_31").style.color = "red";
+                    document.getElementById("q2_input_31").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_32").value === "1") {
+                    document.getElementById("q2_input_32").style.color = "green";
+                    document.getElementById("q2_input_32").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_32").style.color = "red";
+                    document.getElementById("q2_input_32").style.borderColor = "red";
+                }
+                
+                if(document.getElementById("q2_input_2").value === "x" &&
+                   document.getElementById("q2_input_30").value === "x" &&
+                   document.getElementById("q2_input_31").value === "y" &&
+                   document.getElementById("q2_input_32").value === "1") {
+                    if(permission==0) { sound3.play(); }
+                    
+                    $("#newstar4").show();
+                    document.getElementById('newstar4').src= "images/buttons/check_green.png";
+                    
+                    document.getElementById("release2").disabled = true;
+                    document.getElementById("release2").style.backgroundColor = "#FF9797";
+                    
+                    setTimeout(function() {
+                               $("#field_q4").hide();
+                               $("#field_q5").show();
+                               $("#verify2_3").hide();
+                               $("#verify2_4").show();
+                               }, 1000);
+                } else {
+                    if(permission==0) { sound4.play(); }
+                    $("#newstar4").show();
+                    document.getElementById('newstar4').src= "images/buttons/wrong_red.png";
+                }
+                
+                document.getElementById("q2_input_2").disabled = true;
+                document.getElementById("q2_input_30").disabled = true;
+                document.getElementById("q2_input_31").disabled = true;
+                document.getElementById("q2_input_32").disabled = true;
+                
+                document.getElementById("verify2_3").disabled = true;
+                document.getElementById("verify2_3").style.backgroundColor = "#66DE98";
+                
+                document.getElementById("attempts6").innerHTML = percentage3 + percentage;
+                document.getElementById("res_correct_3").innerHTML = percentage3 + percentage;
+                
+                percentage4=percentage3 + percentage;
+                percentage=0;
+            }
+        
+            <!--#5-->
+            function check3_5() {
+                check3();
+                <!-- asd -->
+                if (document.getElementById("q2_input_3").value === "6") {
+                    document.getElementById("q2_input_3").style.color = "green";
+                    document.getElementById("q2_input_3").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_3").style.color = "red";
+                    document.getElementById("q2_input_3").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_4").value === "15z") {
+                    document.getElementById("q2_input_4").style.color = "green";
+                    document.getElementById("q2_input_4").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_4").style.color = "red";
+                    document.getElementById("q2_input_4").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_5").value === "3y") {
+                    document.getElementById("q2_input_5").style.color = "green";
+                    document.getElementById("q2_input_5").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_5").style.color = "red";
+                    document.getElementById("q2_input_5").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_8").value === "4x") {
+                    document.getElementById("q2_input_8").style.color = "green";
+                    document.getElementById("q2_input_8").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_8").style.color = "red";
+                    document.getElementById("q2_input_8").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_9").value === "3y") {
+                    document.getElementById("q2_input_9").style.color = "green";
+                    document.getElementById("q2_input_9").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_9").style.color = "red";
+                    document.getElementById("q2_input_9").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_12").value === "4x") {
+                    document.getElementById("q2_input_12").style.color = "green";
+                    document.getElementById("q2_input_12").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_12").style.color = "red";
+                    document.getElementById("q2_input_12").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_13").value === "5z") {
+                    document.getElementById("q2_input_13").style.color = "green";
+                    document.getElementById("q2_input_13").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_13").style.color = "red";
+                    document.getElementById("q2_input_13").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_14").value === "2x") {
+                    document.getElementById("q2_input_14").style.color = "green";
+                    document.getElementById("q2_input_14").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_14").style.color = "red";
+                    document.getElementById("q2_input_14").style.borderColor = "red";
+                }
+                if(document.getElementById("q2_input_3").value === "6" &&
+                   document.getElementById("q2_input_4").value === "15z" &&
+                   document.getElementById("q2_input_5").value === "3y" &&
+                   document.getElementById("q2_input_8").value === "4x" &&
+                   document.getElementById("q2_input_9").value === "3y" &&
+                   document.getElementById("q2_input_12").value === "4x" &&
+                   document.getElementById("q2_input_13").value === "5z" &&
+                   document.getElementById("q2_input_14").value === "2x") {
+                    if(permission==0) { sound3.play(); }
+                    
+                    $("#newstar5").show();
+                    document.getElementById('newstar5').src= "images/buttons/check_green.png";
+                    
+                    document.getElementById("release2").disabled = true;
+                    document.getElementById("release2").style.backgroundColor = "#FF9797";
+                    
+                    setTimeout(function() {
+                               $("#field_q5").hide();
+                               $("#field_q6").show();
+                               $("#verify2_4").hide();
+                               $("#verify2_5").show();
+                               }, 1000);
+
+                } else {
+                    if(permission==0) { sound4.play(); }
+                    $("#newstar5").show();
+                    document.getElementById('newstar5').src= "images/buttons/wrong_red.png";
+                }
+                
+                document.getElementById("q2_input_3").disabled = true;
+                document.getElementById("q2_input_4").disabled = true;
+                document.getElementById("q2_input_5").disabled = true;
+                document.getElementById("q2_input_8").disabled = true;
+                document.getElementById("q2_input_9").disabled = true;
+                document.getElementById("q2_input_12").disabled = true;
+                document.getElementById("q2_input_13").disabled = true;
+                document.getElementById("q2_input_14").disabled = true;
+                
+                
+                document.getElementById("verify2_4").disabled = true;
+                document.getElementById("verify2_4").style.backgroundColor = "#66DE98";
+                
+                document.getElementById("attempts6").innerHTML = percentage4 + percentage;
+                document.getElementById("res_correct_3").innerHTML = percentage4 + percentage;
+                
+                percentage5=percentage4 + percentage;
+                percentage=0;
+            }
+        
+        
+            
+            <!--#6-->
+            function check3_6() {
+                check3();
+                
+                if (document.getElementById("q2_input_34").value === "x") {
+                    document.getElementById("q2_input_34").style.color = "green";
+                    document.getElementById("q2_input_34").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_34").style.color = "red";
+                    document.getElementById("q2_input_34").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_35").value === "3") {
+                    document.getElementById("q2_input_35").style.color = "green";
+                    document.getElementById("q2_input_35").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_35").style.color = "red";
+                    document.getElementById("q2_input_35").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_36").value === "3") {
+                    document.getElementById("q2_input_36").style.color = "green";
+                    document.getElementById("q2_input_36").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_36").style.color = "red";
+                    document.getElementById("q2_input_36").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_37").value === "5") {
+                    document.getElementById("q2_input_37").style.color = "green";
+                    document.getElementById("q2_input_37").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_37").style.color = "red";
+                    document.getElementById("q2_input_37").style.borderColor = "red";
+                }
+                
+                if(document.getElementById("q2_input_34").value === "x" &&
+                   document.getElementById("q2_input_35").value === "3" &&
+                   document.getElementById("q2_input_36").value === "3" &&
+                   document.getElementById("q2_input_37").value === "5") {
+                    if(permission==0) { sound3.play(); }
+                    
+                    $("#newstar6").show();
+                    document.getElementById('newstar6').src= "images/buttons/check_green.png";
+                    
+                    document.getElementById("release2").disabled = true;
+                    document.getElementById("release2").style.backgroundColor = "#FF9797";
+                    
+                    setTimeout(function() {
+                               $("#field_q6").hide();
+                               $("#field_q7").show();
+                               $("#verify2_5").hide();
+                               $("#verify2_6").show();
+                               }, 1000);
+                } else {
+                    if(permission==0) { sound4.play(); }
+                    $("#newstar6").show();
+                    document.getElementById('newstar6').src= "images/buttons/wrong_red.png";
+                }
+                
+                document.getElementById("q2_input_34").disabled = true;
+                document.getElementById("q2_input_35").disabled = true;
+                document.getElementById("q2_input_36").disabled = true;
+                document.getElementById("q2_input_37").disabled = true;
+                
+                document.getElementById("verify2_5").disabled = true;
+                document.getElementById("verify2_5").style.backgroundColor = "#66DE98";
+                
+                document.getElementById("attempts6").innerHTML = percentage5 + percentage;
+                document.getElementById("res_correct_3").innerHTML = percentage5 + percentage;
+                
+                percentage6=percentage5 + percentage;
+                percentage=0;
+            }
+        
+            <!--#7-->
+            function check3_7() {
+                check3();
+                
+                if (document.getElementById("q2_input_38").value === "y") {
+                    document.getElementById("q2_input_38").style.color = "green";
+                    document.getElementById("q2_input_38").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_38").style.color = "red";
+                    document.getElementById("q2_input_38").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_1").value === "n") {
+                    document.getElementById("q2_input_1").style.color = "green";
+                    document.getElementById("q2_input_1").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_1").style.color = "red";
+                    document.getElementById("q2_input_1").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_39").value === "2") {
+                    document.getElementById("q2_input_39").style.color = "green";
+                    document.getElementById("q2_input_39").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_39").style.color = "red";
+                    document.getElementById("q2_input_39").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_41").value === "y") {
+                    document.getElementById("q2_input_41").style.color = "green";
+                    document.getElementById("q2_input_41").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_41").style.color = "red";
+                    document.getElementById("q2_input_41").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_40").value === "n") {
+                    document.getElementById("q2_input_40").style.color = "green";
+                    document.getElementById("q2_input_40").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_40").style.color = "red";
+                    document.getElementById("q2_input_40").style.borderColor = "red";
+                }
+                if (document.getElementById("q2_input_42").value === "2") {
+                    document.getElementById("q2_input_42").style.color = "green";
+                    document.getElementById("q2_input_42").style.borderColor = "green";
+                    percentage ++;
+                } else {
+                    document.getElementById("q2_input_42").style.color = "red";
+                    document.getElementById("q2_input_42").style.borderColor = "red";
+                }
+                
+                if(document.getElementById("q2_input_38").value === "y" &&
+                   document.getElementById("q2_input_1").value === "n" &&
+                   document.getElementById("q2_input_39").value === "2" &&
+                   document.getElementById("q2_input_41").value === "y" &&
+                   document.getElementById("q2_input_40").value === "n" &&
+                   document.getElementById("q2_input_42").value === "2") {
+                    if(permission==0) { sound18.play(); }
+                    
+                    $("#newstar7").show();
+                    document.getElementById('newstar7').src= "images/buttons/check_green.png";
+                    
+                    document.getElementById("release2").disabled = true;
+                    document.getElementById("release2").style.backgroundColor = "#FF9797";
+                    
+                    document.getElementById("verify2_6").disabled = true;
+                    document.getElementById("verify2_6").style.backgroundColor = "#00C853";
+                    
+                    setTimeout(function() {
+                               show_win();
+                               $("#mark3").show();
+                               document.getElementById('res_star_3').src= "images/buttons/check_green.png";
+                               }, 1000);
+                } else {
+                    if(permission==0) { sound4.play(); }
+                    $("#newstar7").show();
+                    document.getElementById('newstar7').src= "images/buttons/wrong_red.png";
+                }
+                
+                document.getElementById("q2_input_38").disabled = true;
+                document.getElementById("q2_input_1").disabled = true;
+                document.getElementById("q2_input_39").disabled = true;
+                document.getElementById("q2_input_41").disabled = true;
+                document.getElementById("q2_input_40").disabled = true;
+                document.getElementById("q2_input_42").disabled = true;
+                
+                document.getElementById("verify2_5").disabled = true;
+                document.getElementById("verify2_5").style.backgroundColor = "#66DE98";
+                
+                document.getElementById("attempts6").innerHTML = percentage6 + percentage;
+                document.getElementById("res_correct_3").innerHTML = percentage6 + percentage;
+                
+                percentage=0;
+            }
+
+            
+            
+            
+            
+            
+            
+            
+            
+            function reset3() {
+                if(permission==0) { sound19.play(); }
+
+                att4 = 0;
+
+                if(r==1){ hide_win();}
+                if(r_lose==1){ hide_lose();}
+                
+                document.getElementById("verify2").disabled = false;
+                document.getElementById("verify2_1").disabled = false;
+                document.getElementById("verify2_2").disabled = false;
+                document.getElementById("verify2_3").disabled = false;
+                document.getElementById("verify2_4").disabled = false;
+                document.getElementById("verify2_5").disabled = false;
+                document.getElementById("verify2_6").disabled = false;
+                
+                document.getElementById("verify2").style.backgroundColor = "#00C853";
+                document.getElementById("verify2_1").style.backgroundColor = "#00C853";
+                document.getElementById("verify2_2").style.backgroundColor = "#00C853";
+                document.getElementById("verify2_3").style.backgroundColor = "#00C853";
+                document.getElementById("verify2_4").style.backgroundColor = "#00C853";
+                document.getElementById("verify2_5").style.backgroundColor = "#00C853";
+                document.getElementById("verify2_6").style.backgroundColor = "#00C853";
+                
+                document.getElementById("release2").disabled = true;
+                document.getElementById("release2").style.backgroundColor = "#FF9797";
+                
+                
+                document.getElementById("q2_input_1").disabled = false;
+                document.getElementById("q2_input_2").disabled = false;
+                document.getElementById("q2_input_3").disabled = false;
+                document.getElementById("q2_input_4").disabled = false;
+                document.getElementById("q2_input_5").disabled = false;
+                document.getElementById("q2_input_6").disabled = false;
+                document.getElementById("q2_input_7").disabled = false;
+                document.getElementById("q2_input_8").disabled = false;
+                document.getElementById("q2_input_9").disabled = false;
+                document.getElementById("q2_input_10").disabled = false;
+                document.getElementById("q2_input_11").disabled = false;
+                document.getElementById("q2_input_12").disabled = false;
+                document.getElementById("q2_input_13").disabled = false;
+                document.getElementById("q2_input_14").disabled = false;
+                document.getElementById("q2_input_15").disabled = false;
+                document.getElementById("q2_input_16").disabled = false;
+                document.getElementById("q2_input_17").disabled = false;
+                document.getElementById("q2_input_18").disabled = false;
+                document.getElementById("q2_input_19").disabled = false;
+                document.getElementById("q2_input_20").disabled = false;
+                document.getElementById("q2_input_21").disabled = false;
+                document.getElementById("q2_input_22").disabled = false;
+                document.getElementById("q2_input_23").disabled = false;
+                document.getElementById("q2_input_24").disabled = false;
+                document.getElementById("q2_input_25").disabled = false;
+                document.getElementById("q2_input_26").disabled = false;
+                document.getElementById("q2_input_27").disabled = false;
+                document.getElementById("q2_input_28").disabled = false;
+                document.getElementById("q2_input_29").disabled = false;
+                document.getElementById("q2_input_30").disabled = false;
+                document.getElementById("q2_input_31").disabled = false;
+                document.getElementById("q2_input_32").disabled = false;
+                document.getElementById("q2_input_34").disabled = false;
+                document.getElementById("q2_input_35").disabled = false;
+                document.getElementById("q2_input_36").disabled = false;
+                document.getElementById("q2_input_37").disabled = false;
+                document.getElementById("q2_input_38").disabled = false;
+                document.getElementById("q2_input_39").disabled = false;
+                document.getElementById("q2_input_40").disabled = false;
+                document.getElementById("q2_input_41").disabled = false;
+                document.getElementById("q2_input_42").disabled = false;
+                
+                document.getElementById("q2_input_1").style.color = "black";
+                document.getElementById("q2_input_2").style.color = "black";
+                document.getElementById("q2_input_3").style.color = "black";
+                document.getElementById("q2_input_4").style.color = "black";
+                document.getElementById("q2_input_5").style.color = "black";
+                document.getElementById("q2_input_6").style.color = "black";
+                document.getElementById("q2_input_7").style.color = "black";
+                document.getElementById("q2_input_8").style.color = "black";
+                document.getElementById("q2_input_9").style.color = "black";
+                document.getElementById("q2_input_10").style.color = "black";
+                document.getElementById("q2_input_11").style.color = "black";
+                document.getElementById("q2_input_12").style.color = "black";
+                document.getElementById("q2_input_13").style.color = "black";
+                document.getElementById("q2_input_14").style.color = "black";
+                document.getElementById("q2_input_15").style.color = "black";
+                document.getElementById("q2_input_16").style.color = "black";
+                document.getElementById("q2_input_17").style.color = "black";
+                document.getElementById("q2_input_18").style.color = "black";
+                document.getElementById("q2_input_19").style.color = "black";
+                document.getElementById("q2_input_20").style.color = "black";
+                document.getElementById("q2_input_21").style.color = "black";
+                document.getElementById("q2_input_22").style.color = "black";
+                document.getElementById("q2_input_23").style.color = "black";
+                document.getElementById("q2_input_24").style.color = "black";
+                document.getElementById("q2_input_25").style.color = "black";
+                document.getElementById("q2_input_26").style.color = "black";
+                document.getElementById("q2_input_27").style.color = "black";
+                document.getElementById("q2_input_28").style.color = "black";
+                document.getElementById("q2_input_29").style.color = "black";
+                document.getElementById("q2_input_30").style.color = "black";
+                document.getElementById("q2_input_31").style.color = "black";
+                document.getElementById("q2_input_32").style.color = "black";
+                document.getElementById("q2_input_34").style.color = "black";
+                document.getElementById("q2_input_35").style.color = "black";
+                document.getElementById("q2_input_36").style.color = "black";
+                document.getElementById("q2_input_37").style.color = "black";
+                document.getElementById("q2_input_38").style.color = "black";
+                document.getElementById("q2_input_39").style.color = "black";
+                document.getElementById("q2_input_40").style.color = "black";
+                document.getElementById("q2_input_41").style.color = "black";
+                document.getElementById("q2_input_42").style.color = "black";
+                
+                document.getElementById("q2_input_1").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_2").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_3").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_4").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_5").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_6").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_7").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_8").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_9").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_10").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_11").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_12").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_13").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_14").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_15").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_16").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_17").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_18").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_19").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_20").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_21").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_22").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_23").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_24").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_25").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_26").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_27").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_28").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_29").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_30").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_31").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_32").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_34").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_35").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_36").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_37").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_38").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_39").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_40").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_41").style.borderColor = "#E0D1B1";
+                document.getElementById("q2_input_42").style.borderColor = "#E0D1B1";
+            }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            
+            <!--  TASK 4  -->
+            
+            $("#laststar1").hide();
+            $("#laststar2").hide();
+            
+<!--            $("#expression1").hide();-->
+            $("#expression2").hide();
+
+<!--            $("#verify4_1").hide();-->
+            $("#verify4_2").hide();
+
+
+
+            var att5=0;
+            var scores=0;
+            var scores1=0;
+            
+            function check4(){
+                att5++;
+                document.getElementById("attempts7").innerHTML = att5;
+                document.getElementById("res_attempt_4").innerHTML = att5;
+                
+                document.getElementById("release4").disabled = false;
+                document.getElementById("release4").style.backgroundColor = "#FF5252";
+            }
+            
+            <!--#1-->
+            function check4_1() {
+                check4();
+                
+                if (document.getElementById("input1").value === "27b") {
+                    document.getElementById("input1").style.color = "green";
+                    document.getElementById("input1").style.borderColor = "green";
+                    scores++;
+                } else {
+                    document.getElementById("input1").style.color = "red";
+                    document.getElementById("input1").style.borderColor = "red";
+                }
+                if (document.getElementById("input1_deg").value === "2") {
+                    document.getElementById("input1_deg").style.color = "green";
+                    document.getElementById("input1_deg").style.borderColor = "green";
+                    scores++;
+                } else {
+                    document.getElementById("input1_deg").style.color = "red";
+                    document.getElementById("input1_deg").style.borderColor = "red";
+                }
+                if (document.getElementById("input2").value === "4a") {
+                    document.getElementById("input2").style.color = "green";
+                    document.getElementById("input2").style.borderColor = "green";
+                    scores++;
+                } else {
+                    document.getElementById("input2").style.color = "red";
+                    document.getElementById("input2").style.borderColor = "red";
+                }
+                if (document.getElementById("input2_deg").value === "2") {
+                    document.getElementById("input2_deg").style.color = "green";
+                    document.getElementById("input2_deg").style.borderColor = "green";
+                    scores++;
+                } else {
+                    document.getElementById("input2_deg").style.color = "red";
+                    document.getElementById("input2_deg").style.borderColor = "red";
+                }
+                if (document.getElementById("input3").value === "9b") {
+                    document.getElementById("input3").style.color = "green";
+                    document.getElementById("input3").style.borderColor = "green";
+                    scores++;
+                } else {
+                    document.getElementById("input3").style.color = "red";
+                    document.getElementById("input3").style.borderColor = "red";
+                }
+                
+                if(document.getElementById("input1").value === "27b" &&
+                   document.getElementById("input1_deg").value === "2" &&
+                   document.getElementById("input2").value === "4a" &&
+                   document.getElementById("input2_deg").value === "2" &&
+                   document.getElementById("input3").value === "9b") {
+                    if(permission==0) { sound3.play(); }
+                    $("#laststar1").show();
+                    document.getElementById('laststar1').src= "images/buttons/check_green.png";
+                    
+                    document.getElementById("release4").disabled = true;
+                    document.getElementById("release4").style.backgroundColor = "#FF9797";
+                    
+                    setTimeout(function() {
+                               $("#expression1").hide();
+                               $("#expression2").show();
+                               $("#verify4_1").hide();
+                               $("#verify4_2").show();
+                               }, 1000);
+                } else {
+                    if(permission==0) { sound4.play(); }
+                    $("#laststar1").show();
+                    document.getElementById('laststar1').src= "images/buttons/wrong_red.png";
+                }
+                
+                document.getElementById("input1").disabled = true;
+                document.getElementById("input2").disabled = true;
+                document.getElementById("input3").disabled = true;
+                
+                document.getElementById("verify4_1").disabled = true;
+                document.getElementById("verify4_1").style.backgroundColor = "#66DE98";
+                
+                document.getElementById("attempts8").innerHTML = scores;
+                document.getElementById("res_correct_4").innerHTML = scores;
+                
+                scores1=scores;
+                scores=0;
+            }
+        
+            <!--#2-->
+            function check4_2() {
+                check4();
+                
+                if (document.getElementById("input4").value === "32y") {
+                    document.getElementById("input4").style.color = "green";
+                    document.getElementById("input4").style.borderColor = "green";
+                    scores++;
+                } else {
+                    document.getElementById("input4").style.color = "red";
+                    document.getElementById("input4").style.borderColor = "red";
+                }
+                if (document.getElementById("input5").value === "2") {
+                    document.getElementById("input5").style.color = "green";
+                    document.getElementById("input5").style.borderColor = "green";
+                    scores++;
+                } else {
+                    document.getElementById("input5").style.color = "red";
+                    document.getElementById("input5").style.borderColor = "red";
+                }
+                if (document.getElementById("input6").value === "5y") {
+                    document.getElementById("input6").style.color = "green";
+                    document.getElementById("input6").style.borderColor = "green";
+                    scores++;
+                } else {
+                    document.getElementById("input6").style.color = "red";
+                    document.getElementById("input6").style.borderColor = "red";
+                }
+                if (document.getElementById("input7").value === "4") {
+                    document.getElementById("input7").style.color = "green";
+                    document.getElementById("input7").style.borderColor = "green";
+                    scores++;
+                } else {
+                    document.getElementById("input7").style.color = "red";
+                    document.getElementById("input7").style.borderColor = "red";
+                }
+                
+                if(document.getElementById("input4").value === "32y" &&
+                   document.getElementById("input5").value === "2" &&
+                   document.getElementById("input6").value === "5y" &&
+                   document.getElementById("input7").value === "4") {
+                    if(permission==0) { sound3.play(); }
+                    $("#laststar2").show();
+                    document.getElementById('laststar2').src= "images/buttons/check_green.png";
+                    
+                    document.getElementById("release4").disabled = true;
+                    document.getElementById("release4").style.backgroundColor = "#FF9797";
+                    
+                    setTimeout(function() {
+                               show_win();
+                               $("#mark4").show();
+                               document.getElementById('res_star_4').src="images/buttons/check_green.png";
+                               }, 1000);
+                } else {
+                    if(permission==0) { sound4.play(); }
+                    $("#laststar2").show();
+                    document.getElementById('laststar2').src= "images/buttons/wrong_red.png";
+                }
+                
+                document.getElementById("input4").disabled = true;
+                document.getElementById("input5").disabled = true;
+                document.getElementById("input6").disabled = true;
+                document.getElementById("input7").disabled = true;
+                
+                document.getElementById("verify4_2").disabled = true;
+                document.getElementById("verify4_2").style.backgroundColor = "#66DE98";
+                
+                document.getElementById("attempts8").innerHTML = scores1 + scores;
+                document.getElementById("res_correct_4").innerHTML = scores1 + scores;
+                
+                scores=0;
+            }
+        
+        
+        
+            function reset4() {
+                if(permission==0) { sound19.play(); }
+                
+                if(r==1){ hide_win();}
+                if(r_lose==1){ hide_lose();}
+                
+                
+                document.getElementById("verify4_1").disabled = false;
+                document.getElementById("verify4_2").disabled = false;
+                
+                document.getElementById("verify4_1").style.backgroundColor = "#00C853";
+                document.getElementById("verify4_2").style.backgroundColor = "#00C853";
+                
+                document.getElementById("release4").disabled = true;
+                document.getElementById("release4").style.backgroundColor = "#FF9797";
+                
+                
+                document.getElementById("input1").disabled = false;
+                document.getElementById("input2").disabled = false;
+                document.getElementById("input3").disabled = false;
+                document.getElementById("input4").disabled = false;
+                document.getElementById("input5").disabled = false;
+                document.getElementById("input6").disabled = false;
+                document.getElementById("input7").disabled = false;
+                
+                document.getElementById("input1").style.color = "black";
+                document.getElementById("input2").style.color = "black";
+                document.getElementById("input3").style.color = "black";
+                document.getElementById("input4").style.color = "black";
+                document.getElementById("input5").style.color = "black";
+                document.getElementById("input6").style.color = "black";
+                document.getElementById("input7").style.color = "black";
+                
+                document.getElementById("input1").style.borderColor = "#E0D1B1";
+                document.getElementById("input2").style.borderColor = "#E0D1B1";
+                document.getElementById("input3").style.borderColor = "#E0D1B1";
+                document.getElementById("input4").style.borderColor = "#E0D1B1";
+                document.getElementById("input5").style.borderColor = "#E0D1B1";
+                document.getElementById("input6").style.borderColor = "#E0D1B1";
+                document.getElementById("input7").style.borderColor = "#E0D1B1";
+            }
+        
+        
+            
+            
+            
+            
+            
+        
+        
+
+
+
+        
+        
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            
+            <!--   TIME   -->
+            
+            var seconds = 1; var countdownTimer;
+            function GameTimer() {
+                var min = Math.round((seconds - 30)/60);
+                var remainingSeconds = seconds % 60;
+                if (remainingSeconds < 10) {
+                    remainingSeconds = "0" + remainingSeconds;
+                }
+                document.getElementById('waiting_time1').innerHTML = min + ":" + remainingSeconds;
+                document.getElementById("res_time_1").innerHTML = min + ":" + remainingSeconds;
+                
+                seconds++;
+                if (t1==1) {
+                    clearInterval(countdownTimer);
+                }
+            }
+            var seconds2 = 1; var countdownTimer2;
+            function GameTimer2() {
+                var min2 = Math.round((seconds2 - 30)/60);
+                var remainingSeconds2 = seconds2 % 60;
+                if (remainingSeconds2 < 10) {
+                    remainingSeconds2 = "0" + remainingSeconds2;
+                }
+                document.getElementById('waiting_time2').innerHTML = min2 + ":" + remainingSeconds2;
+                document.getElementById("res_time_2").innerHTML = min2 + ":" + remainingSeconds2;
+                
+                seconds2++;
+                if (t2==1) {
+                    clearInterval(countdownTimer2);
+                }
+            }
+            var seconds3 = 1; var countdownTimer3;
+            function GameTimer3() {
+                var min3 = Math.round((seconds3 - 30)/60);
+                var remainingSeconds3 = seconds3 % 60;
+                if (remainingSeconds3 < 10) {
+                    remainingSeconds3 = "0" + remainingSeconds3;
+                }
+                document.getElementById('waiting_time3').innerHTML = min3 + ":" + remainingSeconds3;
+                document.getElementById("res_time_3").innerHTML = min3 + ":" + remainingSeconds3;
+                
+                seconds3++;
+                if (t3==1) {
+                    clearInterval(countdownTimer3);
+                }
+            }
+            var seconds4 = 1; var countdownTimer4;
+            function GameTimer4() {
+                var min4 = Math.round((seconds4 - 30)/60);
+                var remainingSeconds4 = seconds4 % 60;
+                if (remainingSeconds4 < 10) {
+                    remainingSeconds4 = "0" + remainingSeconds4;
+                }
+                document.getElementById('waiting_time4').innerHTML = min4 + ":" + remainingSeconds4;
+                document.getElementById("res_time_4").innerHTML = min4 + ":" + remainingSeconds4;
+                
+                seconds4++;
+                if (t4==1) {
+                    clearInterval(countdownTimer4);
+                }
+            }
+            var seconds5 = 1; var countdownTimer5;
+            function GameTimer5() {
+                var min5 = Math.round((seconds5 - 30)/60);
+                var remainingSeconds5 = seconds5 % 60;
+                if (remainingSeconds5 < 10) {
+                    remainingSeconds5 = "0" + remainingSeconds5;
+                }
+                document.getElementById('waiting_time5').innerHTML = min5 + ":" + remainingSeconds5;
+                document.getElementById("res_time_5").innerHTML = min5 + ":" + remainingSeconds5;
+                
+                seconds5++;
+                if (t5==1) {
+                    clearInterval(countdownTimer5);
+                }
+            }
+        
+        var t1 = 0, t2 = 0, t3 = 0, t4 = 0, t5 = 0;
+        
+            function start_button() {
+                if(permission==0) {
+                    sound17.play();
+                }
+                goHome();
+            }
+            function goHome() {
+                info_sound=0;
+                if(permission==1) { stopAll(); } else { playAll(); }
+                
+                $("#bg2").show();
+                $("#clock2").show();
+                
+                t1 = 1; t2 = 1; t3 = 1; t4 = 1; t5 = 1;
+                
+                $("#information").hide();
+                $("#task_0").show();
+                $("#task_1").hide();
+                $("#task_2").hide();
+                $("#task_3").hide();
+                $("#task_4").hide();
+                $("#task_5").hide();
+                $("#task_6").hide();
+                
+                if(r==1){ hide_win();}
+                if(r_lose==1){ hide_lose();}
+                
+                show_speech();
+                
+                if(permission==0) {
+                    sound1.play();
+                    sound5.pause();
+                    sound8.pause();
+                    sound9.pause();
+                    sound13.play();
+                    sound15.pause();
+                    sound16.pause();
+                }
+            }
+            function goNext0()
+            {
+                $("#bg2").hide();
+                $("#clock2").hide();
+                
+                $("#information").hide();
+                $("#task_0").hide();
+                $("#task_1").show();
+                $("#task_2").hide();
+                $("#task_3").hide();
+                $("#task_4").hide();
+                $("#task_5").hide();
+                $("#task_6").hide();
+                
+                setTimeout(function() {
+                           document.getElementById("timer1").style.visibility = "hidden";
+                           }, 1000);
+                           
+                t1 = 0; t2 = 1; t3 = 1; t4 = 1; t5 = 1;
+                
+                countdownTimer = setInterval(GameTimer, 1000);
+                
+                if(r==1){ hide_win();}
+                if(r_lose==1){ hide_lose();}
+                
+                
+                
+                
+                $("#speech").css("opacity",0);
+                
+                
+                if(permission==0) {
+                    sound13.play();
+                    sound1.pause();
+                    sound5.play();
+                    sound8.play();
+                    sound9.pause();
+                }
+            }
+            function goNext1()
+            {
+                $("#bg2").hide();
+                $("#clock2").hide();
+                
+                $("#information").hide();
+                $("#task_0").hide();
+                $("#task_1").hide();
+                $("#task_2").show();
+                $("#task_3").hide();
+                $("#task_4").hide();
+                $("#task_5").hide();
+                $("#task_6").hide();
+                
+                setTimeout(function() {
+                           document.getElementById("timer2").style.visibility = "hidden";
+                           }, 1000);
+                           
+                t1 = 1; t2 = 0; t3 = 1; t4 = 1; t5 = 1;
+                
+                countdownTimer2 = setInterval(GameTimer2, 1000);
+                
+                if(r==1){ hide_win();}
+                if(r_lose==1){ hide_lose();}
+                
+                $("#speech").css("opacity",0);
+                
+                
+                if(permission==0) {
+                    sound13.play();
+                    sound1.pause();
+                    sound5.play();
+                    sound8.pause();
+                    sound9.play();
+                }
+                loadData();
+                
+                $('#message1').show().css({}).animate( {
+                                                      top:'200px'
+                                                      }, 500);
+            }
+            function goNext2()
+            {
+                $("#bg2").hide();
+                $("#clock2").hide();
+                
+                $("#information").hide();
+                $("#task_0").hide();
+                $("#task_1").hide();
+                $("#task_2").hide();
+                $("#task_3").show();
+                $("#task_4").hide();
+                $("#task_5").hide();
+                $("#task_6").hide();
+                
+                setTimeout(function() {
+                           document.getElementById("timer3").style.visibility = "hidden";
+                           }, 1000);
+                           
+                t1 = 1; t2 = 1; t3 = 0; t4 = 1; t5 = 1;
+                
+                countdownTimer3 = setInterval(GameTimer3, 1000);
+                
+                if(r==1){ hide_win();}
+                if(r_lose==1){ hide_lose();}
+                
+                $("#speech").css("opacity",0);
+                
+                if(permission==0) {
+                    sound13.play();
+                    sound1.pause();
+                    sound5.play();
+                    sound8.pause();
+                    sound9.pause();
+                    sound15.play();
+                }
+                
+            }
+            function goNext3()
+            {
+                $("#bg2").hide();
+                $("#clock2").hide();
+                
+                $("#information").hide();
+                $("#task_0").hide();
+                $("#task_1").hide();
+                $("#task_2").hide();
+                $("#task_3").hide();
+                $("#task_4").show();
+                $("#task_5").hide();
+                $("#task_6").hide();
+                
+                setTimeout(function() {
+                           document.getElementById("timer4").style.visibility = "hidden";
+                           }, 1000);
+                           
+                t1 = 1; t2 = 1; t3 = 1; t4 = 0; t5 = 1;
+                
+                countdownTimer4 = setInterval(GameTimer4, 1000);
+                
+                if(r==1){ hide_win();}
+                if(r_lose==1){ hide_lose();}
+                
+                $("#speech").css("opacity",0);
+                
+                if(permission==0) {
+                    sound13.play();
+                    sound1.pause();
+                    sound5.play();
+                    sound8.pause();
+                    sound9.pause();
+                    sound15.pause();
+                    sound16.play();
+                }
+            }
+            function goNext4()
+            {
+                $("#bg2").hide();
+                $("#clock2").hide();
+                
+                $("#information").hide();
+                $("#task_0").hide();
+                $("#task_1").hide();
+                $("#task_2").hide();
+                $("#task_3").hide();
+                $("#task_4").hide();
+                $("#task_5").show();
+                $("#task_6").hide();
+                
+                setTimeout(function() {
+                           document.getElementById("timer5").style.visibility = "hidden";
+                           }, 1000);
+                           
+                t1 = 1; t2 = 1; t3 = 1; t4 = 1; t5 = 0;
+                
+                countdownTimer5 = setInterval(GameTimer5, 1000);
+                
+                if(r==1){ hide_win();}
+                if(r_lose==1){ hide_lose();}
+                
+                reset5();
+                
+                $("#speech").css("opacity",0);
+                
+                
+                sound16.pause();
+            }
+            function goResults()
+            {
+                $("#bg2").hide();
+                $("#clock2").hide();
+            
+                $("#information").hide();
+                $("#task_0").hide();
+                $("#task_1").hide();
+                $("#task_2").hide();
+                $("#task_3").hide();
+                $("#task_4").hide();
+                $("#task_5").hide();
+                $("#task_6").show();
+                
+                $("#speech").css("opacity",0);
+                
+                if(permission==0) {
+                    sound13.play();
+                    sound1.pause();
+                    sound8.pause();
+                    sound9.pause();
+                }
+            }
+        
+        
+        var ans = 0;
+        var oBtn = document.getElementsByTagName('input')[0];
+        var oPuzzle = document.getElementById('puzzle');
+        var aLi = oPuzzle.getElementsByTagName('li');
+        var aNums = [];
+        var numImages = 9;
+        for(var i = 1; i <= numImages; i++) {
+            aNums.push(i);
+        }
+        var zIndex = 2;
+        
+        var aPos = [];
+        
+        function createRandom() {
+            aNums.sort(function() {
+                       return Math.random()-0.5;
+                       });
+                       console.log(aNums);
+                       for(var i = 0; i < aNums.length; i++) {
+                           var oLi = document.createElement('li');
+                           var oImg = document.createElement('img');
+                           oImg.src = 'images/task5/'+aNums[i]+'.png';
+                           oLi.appendChild(oImg);
+                           oPuzzle.appendChild(oLi);
+                       }
+                       
+                       for(var i = 0; i < aLi.length; i++) {
+                           aPos[i] = {left:aLi[i].offsetLeft,top:aLi[i].offsetTop};
+                       }
+                       
+                       for(var i = 0; i < aLi.length; i++) {
+                           aLi[i].style.left = aPos[i].left+'px';
+                           aLi[i].style.top = aPos[i].top+'px';
+                           aLi[i].style.position = 'absolute';
+                           aLi[i].style.margin = 0;
+                           aLi[i].index = i;
+                           drag(aLi[i]);
+                       }
+                       function findNearest(obj) {
+                           var iMin = 999999;
+                           var iMinIndex = -1;
+                           for(var i = 0; i< aLi.length; i++) {
+                               if(aLi[i]==obj) continue;
+                               if(collTest(obj,aLi[i])) {
+                                   var dis = getDis(obj,aLi[i]);
+                                   if(dis<iMin) {
+                                       iMin = dis;
+                                       iMinIndex = i;
+                                   }
+                               }
+                           }
+                           if(iMinIndex==-1)
+                           return null;
+                           else
+                           return aLi[iMinIndex];
+                       }
+                       function drag(obj) {
+                           obj.onmousedown = function(ev) {
+                               obj.style.zIndex = zIndex++;
+                               var oEvent = ev||event;
+                               var disX = oEvent.clientX-obj.offsetLeft;
+                               var disY = oEvent.clientY-obj.offsetTop;
+                               clearInterval(obj.timer);
+                               document.onmousemove = function(ev) {
+                                   var oEvent = ev||event;
+                                   var l = oEvent.clientX-disX;
+                                   var t = oEvent.clientY-disY;
+                                   obj.style.left = l+'px';
+                                   obj.style.top = t+'px';
+                                   for(var i = 0; i<aLi.length;i++) {
+                                       aLi[i].className = '';
+                                   }
+                                   var oNear = findNearest(obj);
+                                   if(oNear)
+                                   oNear.className = 'box';
+                               };
+                               document.onmouseup = function() {
+                                   document.onmouseup = null;
+                                   document.onmousemove = null;
+                                   obj.releaseCapture&&obj.releaseCapture();
+                                   var oNear = findNearest(obj);
+                                   if(oNear) {
+                                       move(obj,aPos[oNear.index]);
+                                       move(oNear,aPos[obj.index],{fn: function() {
+                                            
+                                            }});
+                                            var tmp;
+                                            tmp = obj.index;
+                                            obj.index = oNear.index;
+                                            oNear.index = tmp;
+                                            oNear.className = '';
+                                            
+                                            
+                                   } else {
+                                       move(obj,aPos[obj.index]);
+                                   }
+                                   
+                                   
+                               };
+                               
+                               obj.setCapture&&obj.setCapture();
+                               return false;
+                           };
+                       }
+        }
+        createRandom();
+        
+        function puzSolved() {
+            var temp = [];
+            for(var i = 0; i < aLi.length; i++) {
+                for(var j = 0; j < aLi.length; j++) {
+                    if(i==aLi[j]['index']) {
+                        temp.push(aLi[j].getElementsByTagName('img')[0].src.match(/(\d+)\./)[1]);
+                    }
+                }
+            }
+            console.log(temp);
+            for(var i = 1; i <= temp.length; i++) {
+                if(i!=temp[i-1]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+        function collTest(obj,obj2) {
+            var l1 = obj.offsetLeft;
+            var r1 = obj.offsetLeft+obj.offsetWidth;
+            var t1 = obj.offsetTop;
+            var b1 = obj.offsetTop+obj.offsetHeight;
+            var l2 = obj2.offsetLeft;
+            var r2 = obj2.offsetLeft+obj.offsetWidth;
+            var t2 = obj2.offsetTop;
+            var b2 = obj2.offsetTop+obj.offsetHeight;
+            if(l2>r1||l1>r2||t1>b2||t2>b1) {
+                return false;
+            }
+            return true;
+        }
+        function getDis(obj,obj2) {
+            var a = obj2.offsetLeft+obj2.offsetWidth/2-(obj.offsetLeft+obj.offsetWidth/2);
+            var b = obj2.offsetTop+obj2.offsetHeight/2-(obj.offsetTop+obj.offsetHeight/2);
+            return Math.sqrt(a*a+b*b);
+        }
+        
+        
+        var e=0;
+        var r=0;
+        
+        var r_lose=0;
+        var e_lose=0;
+        
+        var att6 = 0;
+        var att7 = 0;
+        
+        function check5()
+        {
+            att6++;
+            document.getElementById("attempts9").innerHTML = att6;
+            document.getElementById("res_attempt_5").innerHTML = att6;
+
+
+            if(puzSolved()) {
+                att7++;
+                document.getElementById("attempts10").innerHTML = att7;
+                document.getElementById("res_correct_5").innerHTML = att7;
+                
+                ans = 1;
+                
+                show_win();
+                
+                $("#mark5").show();
+                
+                document.getElementById('res_star_5').src= "images/buttons/check_green.png";
+            }
+        }
+        function reset5()
+        {
+            ans = 0;
+            oPuzzle.innerHTML = '';
+            createRandom();
+            
+            if(r==1){
+                hide_win();
+            }
+        };
+        
+        
+        <!--      WIN     -->
+        function show_win() {
+            $("#shadow").show();
+            
+            r=1;
+            
+            if(permission==0) {
+                sound2.play();
+                sound6.play();
+            }
+
+            
+            $("#firework1").show();
+            $("#firework2").show();
+            $("#firework3").show();
+            
+            setTimeout(function() {
+                       document.getElementById('hero1').src= "images/hero/hero2.png";
+                       setTimeout(function() {
+                                  document.getElementById('hero1').src= "images/hero/hero3.png";
+                                  }, 100);
+                       }, 600);
+                       
+                       timer_0= setInterval(animation_firework,800);
+                       
+            $("#hero1").animate({
+                top: '495px',
+            });
+            
+<!--                       if (e==0){-->
+<!--                           m2();-->
+<!--                           e=1;-->
+<!--                       } else {-->
+<!--                           m2();m2();-->
+<!--                       }-->
+        }
+        function hide_win(){
+            $("#shadow").hide();
+            
+            r=0;
+            
+            if(permission==0) {
+                sound2.play();
+                sound12.play();
+            }
+            
+<!--            m3();m3();-->
+
+            $("#hero1").animate({
+                top: '795px',
+            });
+            
+            document.getElementById('hero1').src= "images/hero/hero1.png";
+            clearInterval(timer_0);
+            
+            $("#firework1").hide();
+            $("#firework2").hide();
+            $("#firework3").hide();
+        }
+        
+        
+        
+        <!--      LOSE     -->
+        function show_lose(){
+            r_lose=1;
+            
+            if(permission==0) {
+                sound2.play();
+                sound7.play();
+            }
+            
+            $("#hero_lose").animate({
+                top: '495px',
+            });
+
+            setTimeout(function() {
+                       document.getElementById('hero_lose').src= "images/hero/hero1.png";
+                       setTimeout(function() {
+                                  document.getElementById('hero_lose').src= "images/hero/hero.png";
+                                  }, 100);
+                       }, 600);
+                       
+<!--                       if (e_lose==0){-->
+<!--                           m2_lose();-->
+<!--                           e_lose=1;-->
+<!--                       } else {-->
+<!--                           m2_lose();m2_lose();-->
+<!--                       }-->
+        }
+        function hide_lose(){
+            r_lose=0;
+            
+            if(permission==0) {
+                sound2.play();
+                sound12.play();
+            }
+            
+            
+<!--            m3_lose();m3_lose();-->
+
+            $("#hero_lose").animate({
+                top: '795px',
+            });
+            
+            document.getElementById('hero_lose').src= "images/hero/hero2.png";
+        }
+        function m2_lose(){
+            var timer_2_lose = setInterval(move_hero_lose,1);
+        }
+        function move_hero_lose(){
+            var x_lose=document.getElementById('hero_lose').offsetTop;
+            x_lose = x_lose - 5;
+            if(x_lose == 495){
+                clearInterval(timer_2_lose);
+            }
+            document.getElementById('hero_lose').style.top= x_lose + "px";
+        }
+        function m3_lose(){
+            var timer_3_lose = setInterval(move_hero3_lose,1);
+        }
+        function move_hero3_lose(){
+            var x3_lose=document.getElementById('hero_lose').offsetTop;
+            x3_lose = x3_lose + 5;
+            if(x3_lose == 850){
+                clearInterval(timer_3_lose);
+            }
+            document.getElementById('hero_lose').style.top= x3_lose + "px";
+        }
+        
+        
+        
+        
+        
+        </script>
+        
+        
+        
+        
+        <!-- Clock -->
+        <script>
+            var Clock = function(){
+                this.widths = 140;
+                this.heights = 140;
+                this.canvas = document.getElementById("canvas");
+                this.context = this.canvas.getContext("2d");
+                this.r = 44;
+                this.init();
+            };
+        Clock.prototype = {
+            init:function(){
+                this.initCanvas();
+                this.drawCircle();
+                this.drawNumber();
+                this.drawPointer();
+                var that = this;
+                setInterval(function(){
+                            that.context.clearRect(0,0,that.widths,that.heights);
+                            that.drawCircle();
+                            that.drawNumber();
+                            that.drawPointer();
+                            },1000);
+            },
+            initCanvas:function(){
+                this.canvas.width = this.widths;
+                this.canvas.height = this.heights;
+            },
+            drawCircle:function(){
+                this.context.save();
+                this.context.beginPath();
+                this.context.arc(this.widths/2,this.heights/2,this.r,0,Math.PI*2,true);
+                this.context.closePath();
+                var g = this.context.createLinearGradient(0,35,0,350);
+                <!--                g.addColorStop(0,"#ffffff");//#f9fdff-->
+                <!--                g.addColorStop(1,"#ffffff");//#d9eaf8-->
+                this.context.fillStyle = g;
+                this.context.shadowOffsetX = 0;
+                this.context.shadowOffsetY = 6;
+                this.context.shadowBlur = 1;
+                this.context.shadowColor = "#ffffff"; //обводка круга #7D91B0
+                this.context.fill();
+                this.context.restore();
+            },
+            drawNumber:function(){
+                this.context.save();
+                for(var i = 1;i < 13; i++){
+                    var angle = i*30;
+                    angle = angle*Math.PI/180;
+                    var x = Math.round(Math.sin(angle)*(this.r-11));
+                    var y = Math.round(-Math.cos(angle)*(this.r-11));
+                    this.context.fillStyle="#8DA6B8"; // цифры
+                    this.context.font = "bold 10px Calibri";
+                    this.context.textAlign = "center";
+                    this.context.textBaseline = "middle";
+                    <!--                    this.context.fillText(i,x+this.widths/2,y+this.heights/2);-->
+                }
+                this.context.restore();
+            },
+            drawPointer:function(){
+                var time = new Date();
+                var h = time.getHours();
+                var m = time.getMinutes();
+                var s = time.getSeconds();
+                var hrotate = (h*30+(m/60)*30+(s/3600)*30)*Math.PI/180;
+                var mrotate = (m*6+(s/60)*6)*Math.PI/180;
+                var srotate = (s*6)*Math.PI/180;
+                // console.log(h + ':' + m + ':' + s);
+                
+                
+                this.context.save();
+                this.context.translate(this.widths/2,this.heights/2);
+                this.context.save();
+                this.context.rotate(hrotate);
+                this.context.beginPath();
+                this.context.lineCap="round";
+                this.context.moveTo(0,0);
+                this.context.lineTo(0,-22);
+                this.context.strokeStyle="#1AA9D8";//стрелка часов
+                this.context.lineWidth=4;
+                this.context.stroke();
+                this.context.closePath();
+                this.context.restore();
+                
+                this.context.save();
+                this.context.rotate(mrotate);
+                this.context.beginPath();
+                this.context.lineCap="round";
+                this.context.moveTo(0,0);
+                this.context.lineTo(0,-30);
+                this.context.strokeStyle="#23BCEF";//стрелка минут
+                this.context.lineWidth=3;
+                this.context.stroke();
+                this.context.closePath();
+                this.context.restore();
+                
+                this.context.save();
+                this.context.rotate(srotate);
+                this.context.beginPath();
+                this.context.lineCap="round";
+                this.context.moveTo(0,0);
+                this.context.lineTo(0,-30);
+                this.context.strokeStyle="black";//стрелка секунд #23BCEF
+                this.context.lineWidth=1;
+                this.context.stroke();
+                this.context.closePath();
+                this.context.restore();
+                this.context.restore();
+            },
+        };
+        var clock = new Clock();
+        </script>
+        
+        
+     
+        
+    </body>
+</html>
+
+
+
+
+
+
+

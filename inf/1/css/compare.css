@@ -1,0 +1,83 @@
+table {
+    position: relative;
+}
+#my_overlay {
+    background-color: #000; /* Чёрный фон */
+    height: 100%;   width: 100%;
+    position: fixed;
+    left: 0; 
+    top: 0; 
+    opacity: 0.5; 
+    z-index: 100;
+}
+
+td {border:none;
+    padding:0;
+    font-size:22px;
+    color: #48150a;
+    font-family: AppFont2;
+    width:280px;
+    height:70px;
+    background-image: url(../images/bg_orange.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 2% center;
+}
+
+#box .quest{
+    font-size:24px;
+    width:75px;
+    height:75px;
+    margin:20px;
+      color: #4a1a0a;
+    background-image: url(../images/pustoi.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-size: 60px 60px;
+}
+#box .quest:hover,active{ 
+    color:#efc763;
+   background-image: url(../images/pustoi2.png);    
+}
+
+#box h2,h3,h4{
+	margin:0;
+color:#4a1a0a;
+	cursor: pointer;   
+	font-size:50px;
+    font-family: AppFont;
+}
+td:hover {
+    cursor: hand;
+}
+
+.variationstyle {
+    position: absolute;
+    visibility: hidden;
+      background-image: url(../images/pustoi2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    color:#efc763;
+    line-height: 30px;
+   margin-top: -80px;
+    z-index: 100;
+    line-height: 45px;
+    padding:10px;
+/*     background: greenyellow;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px; */
+}
+.variationstyle2 {    
+/*   margin-top: -160px;*/
+}
+span:hover{
+    cursor: pointer;
+
+}
+
+

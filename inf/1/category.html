@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<title></title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/dropdownmenu.css">
+<script type="application/javascript" src="lib/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div class="container-select-level">
+		<!-- 
+		<h3 class="margin-1 font2 anim-fade">Выберите уровень сложности</h3> -->
+
+		<a href="level1.html"
+			class="button-1 transition-button container-star">легкий <span
+			class="star"></span>
+		</a> <a href="level_table_skip.html"
+			class="button-2 transition-button container-star">средний <span
+			class="star"></span></a> <a
+			class="button-3 transition-button container-star"
+			onclick="showModalLevel();">сложный <span class="star"></span></a>
+	</div>
+
+
+	<div class="modal fade modal-levels">
+		<div class="modal-dialog container-btns">
+
+			<a class="button-4" href="level3.html">Установи соответствие<span
+				class="star"></span></a> <a class="button-5" href="level4.html">Реши
+				задачу</a> <a class="button-6" href="level_compare.html">Сравни</a>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+	<script src="js/retina.min.js"></script>
+</body>
+<script>
+	function showModalLevel() {
+		$(".modal-levels").modal("toggle");
+	}
+/* var stars = document.getElementsByClassName("star");   
+var res1 = sessionStorage.getItem('res1');
+var res2 = sessionStorage.getItem('res2');   
+var res3 = sessionStorage.getItem('res3');
+var res4 = sessionStorage.getItem('res4');
+var res5 = sessionStorage.getItem('res5');
+
+if(res1 && res2 && res3 && res4 && res5){
+	console.log("GAMES OVER");
+}
+console.log("RESULTS: "+res1+", "+res2+", "+res3+", "+res4+", "+res5); */
+//
+//if(res1) stars[0].classList.add("star-gold"); */
+      //if(res2) stars[1].classList.add("star-silver"); 
+//    if(res3 && res4 && res5){
+//        console.log("GOLD");   
+//        stars[2].classList.add("star-gold");    
+//    }else if(res3&&res4 || res5&&res4 || res3&&res5){        
+//        console.log("SILVER");
+//        stars[2].classList.add("star-silver");
+//    }else  if(res3 || res4 || res5){
+//        console.log("BRONZE");
+//        stars[2].classList.add("star-bronze"); 
+//    }
+//    
+//    console.log("RESULT = ",res1+"-"+res2+"-"+res3+"-"+res4+"-"+res5);
+</script>
+<script type="text/javascript" src="js/loader.js"></script>
+</html>

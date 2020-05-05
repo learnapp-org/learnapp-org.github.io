@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css"
+	href="bootstrap/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<title></title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/level4.css">
+<!-- normalizes device and document ready events, see file for details -->
+<script type="application/javascript" src="lib/jquery.min.js"></script>
+<script type="application/javascript"
+	src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/animate.js"></script>
+</head>
+
+<body>
+
+	<h2 id='question-description' class="question container-center"
+		style="width: 950px; height: 340px; line-height: 1.5em; padding-top: 60px; font-size: 25px; font-family: AppFont3; background-size: contain;">
+		<span class="tab">_____</span>Асель занимается танцами. Для
+		самостоятельных занятий ей нужно записать несколько музыкальных
+		мелодий на мобильный телефон. Как помочь Асель, если известно, что на
+		мобильном телефоне свободно 2 Гб памяти? Сколько файлов можно
+		записать, если каждый музыкальный файл имеет объем <label class="vals"></label>,<label class="vals"></label>,<label class="vals"></label>?
+	</h2>
+	<table class="mytable1" style="text-align: center;">
+		<tr>
+			<td><label id="lab1">6 мб</label><input id="answer1" type="text" /></td>
+			<td><a class="button-check" style="text-align:right" onclick="check(this,0);"></a></td>
+		</tr>
+		<tr>
+			<td><label id="lab2">10,5 мб</label><input id="answer2" type="text" /></td>
+			<td><a class="button-check" onclick="check(this,1);"></a></td>
+		</tr>
+        <tr>
+			<td><label id="lab3">10,5 мб</label><input id="answer3" type="text" /></td>
+			<td><a class="button-check" onclick="check(this,2);"></a></td>
+		</tr>
+	</table>
+<a href="category.html" class="button-home"></a> 
+<a class="button-info right-bottom" onclick="showInfo()"></a> 
+	<!--<div style = "width: 1200px; height: 300px; margin: auto">
+				<div class = "imagesCollection"> 
+					<div class = "imageWithDescriptionContainer1" id = "imageWithDescriptionContainer1"> 
+						<img src = "images/avi_icon.png" class = "icon" id = "image1">
+						<p class = "sizeText text-inside-app">6Mb</p>
+						<div class = "minusPlusButtonsContainer1">
+							<button type="button" class = "incrDecrBtn minusButton" id = 'button1' onclick="decreaseBar(event, 6)"></button> <button type="button" class = "incrDecrBtn plusButton" id = 'button1' onclick="increaseBar(event, 6)"></button>
+						</div>
+					</div>
+					<div class = "imageWithDescriptionContainer2" id = "imageWithDescriptionContainer2"> 
+						<img src = "images/ppt_icon.png" class = "icon" id = "image2">
+						<p class = "sizeText text-inside-app">10,5Mb</p>
+						<div class = "minusPlusButtonsContainer2">
+							<button type="button" class = "incrDecrBtn minusButton" id = 'button2' onclick="decreaseBar(event, 10.5)"></button> <button type="button" class = "incrDecrBtn plusButton" id = 'button2' onclick="increaseBar(event, 10.5)"></button>
+						</div>
+					</div>
+
+					<div class = "imageWithDescriptionContainer3" id = "imageWithDescriptionContainer3">
+						<img src = "images/pdf_icon.png" class = "icon" id = "image3">
+						<p class = "sizeText text-inside-app">3Mb</p>
+						<div class = "minusPlusButtonsContainer3">
+							<button type="button" class = "incrDecrBtn minusButton" id = 'button3' onclick="decreaseBar(event, 3)"></button> <button type="button" class = "incrDecrBtn plusButton" id = 'button3' onclick="increaseBar(event, 3)"></button>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class = 'diskStorage'><p class = "text-inside-app">Файлов на телефоне: <b id = 'filesCounter'>0</b></p><img src = "images/disk_icon.jpeg"><p class = "text-inside-app">512Мб</p></div>
+				<div class = "progressIndicator">
+					<div class="w3-progress-container">
+						<div id="myBar" class="w3-progressbar w3-green" style="width:0%">
+							<div id="demo" class="w3-center w3-text-white">0%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+
+	<!--
+	<div class="modal fade modal-info" data-backdrop="static"
+		data-keyboard="false" data-backdrop="true">
+	   
+			
+	<a class="button-cancel right-top" data-dismiss="modal"></a>
+	</div>
+	<a class="button-info right-top" onclick="showInfo()"></a>
+-->
+    <div class="modal fade modal-info" >
+		<img src="images/modal/info2048.png">
+	<a class="button-cancel right-bottom" data-dismiss="modal"></a>
+        
+	</div>
+	<!--MODAL GAME OVER-->
+	<div class="modal fade modal-game-over-2" data-backdrop="static"
+		data-keyboard="false" data-uib="twitter%20bootstrap/modal"
+		data-ver="1" data-backdrop="true">
+
+
+		<h3 class="result-title font2">Задание выполнено</h3>
+		<div class="result-bg-2">
+			<label class="beige">Молодец!<br/> так держать</label>
+		</div>
+		<a href="category.html" class="button-home"></a> <a href="level4.html"
+			class="button-repeat"></a>
+	</div>
+<script src="js/level4.js"></script>
+ <script type="text/javascript" src="js/loader.js"></script>
+</body>
+
+</html>

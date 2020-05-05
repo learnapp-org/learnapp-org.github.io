@@ -1,0 +1,45 @@
+#timerBG {
+	width: 150px;
+	height: 150px;
+}
+
+#timerShape {
+	position: absolute;
+	top: 0;
+	width: 151px;
+	height: 149px;
+	background-image: url(../images/time.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#timerBlick {
+	position: absolute;
+	top: 0;
+	width: 151px;
+	height: 149px;
+	background-image: url(../images/timeglass.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#timer {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	text-align: center;
+}
+
+#timerDigits {
+	position: absolute;
+	top: 0; width : 150px;
+	height: 150px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 24px;
+	color: #9de8c9;
+	font-family: AppFont2;
+	width: 150px;
+}

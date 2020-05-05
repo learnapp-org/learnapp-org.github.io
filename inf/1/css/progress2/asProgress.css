@@ -1,0 +1,36 @@
+/**
+* jQuery asProgress v0.2.3
+* https://github.com/amazingSurge/jquery-asProgress
+*
+* Copyright (c) amazingSurge
+* Released under the LGPL-3.0 license
+*/
+.progress {
+	position:fixed;
+	bottom:40px;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	width: 622px;
+    height: 30px;
+    overflow: hidden;
+    background-size: contain;
+    background-image: url(../../images/progress_bar1.png);
+/*
+  background-color: #f7f7f7;
+  border: 1px solid #eee;
+*/
+}
+.progress__bar {
+  display: block;
+  height: 100%;
+   background-image: url(../../images/progress_bar2.png);
+    background-size: cover;
+}
+.progress__label{
+  float: right;
+  padding: 0 2px;
+  font-size: 12px; 
+  color: #fff;
+}
+

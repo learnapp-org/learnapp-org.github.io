@@ -1,0 +1,251 @@
+
+@keyframes fade { 0% {
+	bottom: -5%;
+opacity:1;}
+	50%{
+bottom:5%;
+opacity:0.5;
+}
+    100%{
+bottom: -5%;opacity:1;}
+}
+body{
+	background:black;
+    overflow: hidden;
+	cursor: url(../img/cursor.png), move !important; 
+}
+
+.anim-fade {
+	animation: fade 2s linear infinite;
+}
+#background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/fon.png);
+	background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    pointer-events: none;
+}
+.background2{
+    pointer-events: none;
+    transition: background 1s;   
+    background-image: url(../img/fon_red.png) !important;
+}
+#shape{
+    position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/shape.png);
+	background-size: auto 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+.shape2{
+    transition: background 1s;
+    background-image: url(../img/shape_red.png) !important;
+}
+#tuman{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+/* 	background:red; */
+background-image: url(../img/tuman.png);
+	background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat; 
+	animation: fade 5s linear infinite;
+    pointer-events: none;
+}
+#app1 {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -540px;
+    margin-left: -960px;
+    background-size: 1920px auto;
+}
+
+.iframe {
+	position: absolute;
+	width: 1280px;
+	height: 800px;
+	/* background: url(../img/bg_tablet.png) no-repeat center center; */
+	border:  none;
+	/*! visibility: hidden; */
+}
+
+#app {
+	width: 1280px;
+	height: 800px;
+  /*background: url(../img/pergament.png) no-repeat center center;
+*/	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -400px;
+	margin-left: -640px;
+    background-size: 1280px auto;
+	/*! visibility: hidden; */
+	/*! background-color: red; */
+	/*! z-index: 3; */
+
+}
+    
+    #mush {
+	cursor: url(../img/cursor.png), move !important;
+	position: absolute;
+	width: 65px;
+	height: 73px;
+		bottom: 27%;/*140px;*/
+	right: 32%;/*290px;*/
+	background-image: url(../img/mush1.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#mush:active {
+	background-image: url(../img/mush2.png);
+}
+    
+    #frog {
+	cursor: url(../img/cursor.png), move !important;
+	position: absolute;
+	width: 106px;
+	height: 77px;
+	bottom: 90px;
+	left: 300px;
+	background-image: url(../img/frog1.png);
+	background-size: 106px 77px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#frog:active {
+	background-image: url(../img/frog2.png);
+}
+
+#makaka {
+	cursor: url(../img/cursor.png), move !important;
+	position: absolute;
+	width: 110px;
+	height: 279px;
+	top: 180px;
+	right: 15%;
+	background-image: url(../img/makaka.png);
+	background-size: 110px 279px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#makaka:active {
+	background-image: url(../img/makaka.png);
+}  
+#title {
+	position: relative;
+	margin: 10% auto;
+	width: 641px;
+	height: 380px;
+	background-image: url(../img/nadpis.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#shrub1 {
+	cursor: url(../img/cursor.png), move !important;
+	position: absolute;
+	width: 396px;
+	height: 356px;
+	bottom: 280px;
+	left: 860px;
+	background-image: url(../img/ne-pustoi1.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#shrub2 {
+	cursor: url(../img/cursor.png), move !important;
+	position: absolute;
+	width: 323px;
+	height: 224px;
+	bottom: 280px;
+	left: 800px;
+	background-image: url(../img/ne-pustoi2.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#shrub3 {
+	cursor: url(../img/cursor.png), move !important;
+	position: absolute;
+	width: 209px;
+	height: 235px;
+	bottom: 260px;
+	left: 820px;
+    z-index:3;
+	background-image: url(../img/pustoi1.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#shrub4 {
+	cursor: url(../img/cursor.png), move !important;
+	position: absolute;
+	width: 206px;
+	height: 203px;
+	bottom: 280px;
+	left: 690px;
+    z-index:2;
+	background-image: url(../img/pustoi2.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#shrub5 {
+	cursor: url(../img/cursor.png), move !important;
+	position: absolute;
+	width: 243px;
+	height: 336px;
+	bottom: 280px;
+	left: 400px;
+	background-image: url(../img/pustoi3.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#shrub6 {
+	cursor: url(../img/cursor.png), move !important;
+	position: absolute;
+	width: 306px;
+	height: 272px;
+	bottom: 280px;
+	left: 450px;
+	background-image: url(../img/pustoi4.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#tablet-small {
+	cursor: url(../img/cursor.png), move !important;
+	position: absolute;
+	width: 101px;
+	height: 89px;
+	bottom: 345px;
+	left: 920px;
+	background-image: url(../img/tablet.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+

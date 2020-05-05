@@ -1,0 +1,127 @@
+/*------------ Main Menu ------------*/
+.mainmenu {
+	position: relative;
+	width:50%;
+	margin:10px auto;
+	font-size: 40px;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	cursor: pointer;
+	width: 388px;
+	height: 112px;
+	line-height: 112px;
+margin-top: -6px;
+}
+
+li a {
+	display: block;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	color: black;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	background-image: url(../images/b2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+li a:hover {
+	font-weight: bolder;
+	text-decoration: none; 	
+	background-image: url(../images/b2_2.png);
+}
+.submenu{
+	margin-left: -40px;
+}
+.submenu li a{
+	color: #656565;
+}
+
+.first-item {
+	background-image: url(../images/b1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.first-item:hover, active {
+	background-image: url(../images/b1_2.png);
+}
+
+.last-item{
+	background-image: url(../images/b3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -10px;
+}
+
+.last-item:hover, active {
+	background-image: url(../images/b3_2.png);
+}
+
+/* 
+.item-1 {
+	background-image: url(../images/b1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 68px;
+}
+
+.item-1:hover, active {
+	background-image: url(../images/b1_2.png);
+}
+
+.item-2 {
+	background-image: url(../images/b2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.item-2:hover, active {
+	background-image: url(../images/b2_2.png);
+}
+
+.item-2-2 {
+	background-image: url(../images/b2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: -25px;
+}
+
+.item-2-2:hover, active {
+	background-image: url(../images/b2_2.png);
+}
+
+.item-3 {
+	background-image: url(../images/b3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top:-10px;
+	margin-left:40px;
+}
+
+.item-3:hover, active {
+	background-image: url(../images/b3_2.png);
+} */
+/*------------ Sub Menu ------------*/
+
+/* .expand-triangle {
+    width: 540px;
+    height: 10px;
+    content: " ";    margin-left: -40px;
+	background-color:#6ED4FF;
+}
+
+.expand-triangle img {
+    width: inherit;
+    height: inherit;
+	margin-top:-2px;
+    vertical-align: top;
+} */
